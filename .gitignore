@@ -1,0 +1,66 @@
+# ==========================================
+# Security & Credentials (CRITICAL - DO NOT COMMIT)
+# ==========================================
+client_secrets.json
+youtube_token.json
+instagram_session.json
+.trackevolution_tokens.json
+*token*.json
+*secret*.json
+*session*.json
+.env
+.env.*
+*.pem
+*.key
+
+# Explicitly allow examples
+!client_secrets.json.example
+!.env.example
+
+# ==========================================
+# Large Databases & Raw Track Archives (>100MB)
+# ==========================================
+*.mdb
+*.tparecord
+tpa_records/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.m4v
+
+# ==========================================
+# Verbose System & PTPA Logs
+# ==========================================
+logs/
+logs_fresh/
+*.log
+
+# ==========================================
+# Python & Environment
+# ==========================================
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.so
+.pytest_cache/
+
+# ==========================================
+# OS & IDE Metadata
+# ==========================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ==========================================
+# External Sub-repositories
+# ==========================================
+track-history/
