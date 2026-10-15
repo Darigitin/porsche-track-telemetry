@@ -56,6 +56,7 @@ Location: `{EXPORT_DIR}`
 
 ### 1. Main Video: 1:59.62 All-Time Personal Best (1440p Master)
 * **File:** `{exports.get('youtube_1440p', {}).get('file', '')}`
+* **Format:** 1440p Landscape (16:9) — High Bitrate VP09/AV01 Codec
 * **Title:** `Porsche 718 Cayman GT4 | Breaking the 2-Minute Barrier at High Plains Raceway (1:59.62 PB) [Telemetry]`
 * **Category:** Autos & Vehicles (ID: 2)
 * **Description:**
@@ -68,30 +69,85 @@ Vehicle: Porsche 718 Cayman GT4
 Telemetry / Data: Porsche Track Precision App (PTPA)
 
 Vehicle & Setup Notes:
-- Peak Lateral Grip: 1.29G
+- Peak Lateral Grip: 1.29G (1.54G apex in Corkscrew / Turn 13-15)
 - Hot Pressures: ~30.5 PSI target
 - Full 2-year progression: 2:16.78 (June 2024) -> 1:59.62 (October 2026)
 ```
 
 ---
 
-## 📱 Instagram Reels (Ready to Post)
+## 🔴 YouTube Shorts (Data & Technique Focused)
+> **Algorithm Strategy:** YouTube Shorts audience is driven by technical telemetry, speed readouts, and lap records. In YouTube Studio, always link the **"Related video"** to the 1440p Hero Lap master to funnel Shorts viewers into long-form subscribers!
 
-### 1. The Finish Line Sprint (44s Highlight)
+### 1. Milestone Sprint Short (44s Finish Line Crossing)
 * **File:** `{exports.get('ig_highlight_44s', {}).get('file', '')}`
-* **Audio:** Raw Engine Audio
+* **Title:** `Sub-2:00 Barrier Broken! 1:59.62 PB in 718 Cayman GT4 #Shorts`
+* **Description:**
+```text
+Crossing the line at 1:59.624 in the Porsche 718 Cayman GT4 at High Plains Raceway. 
+Full lap with complete 10Hz CAN-bus telemetry linked above!
+
+#Shorts #Porsche #718GT4 #HighPlainsRaceway #TrackDay #HPDE #Motorsport #Flat6
+```
+* **Pinned Comment:**
+```text
+Full 1:59.62 PB lap with complete throttle, brake, and G-force telemetry linked above! What's your personal best at HPR?
+```
+
+### 2. Peak Grip Short (20s Corkscrew Apex)
+* **File:** `{exports.get('ig_peak_grip_20s', {}).get('file', '')}`
+* **Title:** `1.54G Lateral Load at 81 MPH! 718 Cayman GT4 Apex Grip #Shorts`
+* **Description:**
+```text
+Sustained 1.54G through the Prairie Corkscrew at High Plains Raceway. 718 Cayman GT4 chassis on hot tires (30.5 PSI). 
+
+#Shorts #Porsche #718GT4 #LateralG #TrackDay #GForce #CorneringSpeed #HPDE
+```
+* **Pinned Comment:**
+```text
+Tire pressures dialed right to 30.5 PSI hot. Full session data and laps on the channel!
+```
+
+---
+
+## 🟣 Instagram Reels (Sound, Emotion & Discussion Focused)
+> **Algorithm Strategy:** Instagram Reels audience is driven by visceral audio, relatable driver journey, and discussions. Boost views by asking questions in captions and adding on-screen text hooks in the first 2 seconds.
+
+### 1. The Finish Line Sprint (44s Reel)
+* **File:** `{exports.get('ig_highlight_44s', {}).get('file', '')}`
+* **Audio:** Raw Flat-6 Engine Audio (Turn Sound UP 🔊)
+* **Recommended On-Screen Hook (First 2s):** *"POV: You finally break the 2-minute barrier after 2 years of work."*
 * **Caption:**
 ```text
 Finally cracked into the 1:50s at High Plains Raceway 🏁
 
 1:59.624 across the line in the 718 Cayman GT4. Two years of seat time dropping down from our first 2:16 baseline. Full lap with complete telemetry is up on YouTube!
 
+Save this for your next track day at HPR 📌 What milestone are you chasing this season?
+
 #Porsche #718GT4 #CaymanGT4 #HighPlainsRaceway #TrackDay #HPDE #Motorsport #Flat6 #TrackAddict #LapRecord
 ```
 
 ---
 
-### 2. Full Lap Mobile Experience (1:59 Vertical Reel)
+### 2. Peak Grip Moment: 1.54G Corkscrew Apex (20s Reel)
+* **File:** `{exports.get('ig_peak_grip_20s', {}).get('file', '')}`
+* **Audio:** Raw High-RPM Engine Sound
+* **Recommended On-Screen Hook (First 2s):** *"1.54G through the Corkscrew. Would you lift or stay flat?"*
+* **Caption:**
+```text
+Carrying 1.54G through the Corkscrew at 81 MPH 🏎️💨
+
+The chassis balance and grip on the 718 GT4 when the tires are right at 30.5 PSI hot is something else. 
+
+Would you carry this much apex speed or brake earlier for exit drive? Drop your thoughts below 👇
+
+#Porsche #718GT4 #LateralG #HighPlainsRaceway #TrackDay #GForce #CorneringSpeed
+```
+
+---
+
+### 3. Full Lap Mobile Experience (1:59 Vertical Reel)
 * **File:** `{exports.get('ig_full_lap', {}).get('file', '')}`
 * **Caption:**
 ```text
@@ -105,28 +161,33 @@ Lap Time: 1:59.624
 
 ---
 
-### 3. Peak Grip Moment: 1.54G Carousel Apex (20s Reel)
-* **File:** `{exports.get('ig_peak_grip_20s', {}).get('file', '')}`
-* **Caption:**
+## 📊 Instagram Carousel (High-Reach Data & Setup Post)
+> **Algorithm Strategy:** Instagram heavily favors 4:5 carousels for automotive enthusiast accounts, driving significantly higher **Saves & Shares** than standalone video.
+
+* **Asset Directory:** `charts/carousel/` (Rendered via `python generate_carousel_slides.py`)
+* **Slide Formats:** 1080x1350 (4:5 vertical) in official Porsche Motorsport Livery
+* **Slide Lineup:**
+  1. Slide 01: 2-Year Progression Hero Card (`2:16.78` -> `1:59.62` PB)
+  2. Slide 02: Lap Time Evolution across 61 sessions & 519 laps
+  3. Slide 03: Racing Line Comparison (PB Red vs Benchmark White)
+  4. Slide 04: Chassis Dynamics (Peak Lateral G & Braking Spike)
+  5. Slide 05: Throttle Commitment (WOT % Progression)
+  6. Slide 06: Engineering Debrief & Tire Pressure Benchmark
+* **Caption:** (From `charts/carousel/caption.txt`)
 ```text
-Carrying 1.54G through the carousel at 81 MPH 🏎️💨
+From 2:16.78 down to 1:59.62: What two years of CAN-bus telemetry and chassis setup look like in the 718 Cayman GT4 🏁⏱️
 
-The chassis balance and grip on the 718 GT4 when the tires are right at 30.5 PSI hot is something else. 
+When we first brought the car to High Plains Raceway in June 2024, our baseline was 2:16. Across 61 sessions and 519 timed laps, the CAN data showed three distinct breakthroughs:
 
-#Porsche #718GT4 #LateralG #HighPlainsRaceway #TrackDay #GForce #CorneringSpeed
-```
+1️⃣ Tire Pressure Discipline: Starting cold at 24 PSI and bleeding immediately after Session 1 down to a 30.5 PSI hot target unlocked 1.35G sustained grip (peaking at 1.54G in the Corkscrew) while keeping tires in their prime window all weekend.
+2️⃣ Trail Braking: Trailing off to ~15% brake pressure right down to apex loaded the front axle and cured the 718 GT4's natural high-speed entry push.
+3️⃣ Throttle Commitment: Wide Open Throttle (WOT) time climbed from 2.2% to 36.6% of the lap—bringing back-straight velocity up from 114 to 134.8 MPH purely from exit momentum.
 
----
+Swipe through for the full telemetry debrief ➡️
 
-### 4. Sunday Consistency Follow-Up (2:00.12 Lap)
-* **File:** `{exports.get('ig_followup_reel', {}).get('file', '')}`
-* **Caption:**
-```text
-Backing it up on Sunday morning: 2:00.12 ⏱️
+What data metric or chassis tweak unlocked the biggest chunk of time at your home track? Drop your setup notes below! 👇
 
-Just 0.49 seconds off Saturday's PB. 81 total laps across the weekend and running 2:00 flat all Sunday. 
-
-#Porsche #718GT4 #TrackConsistency #HighPlainsRaceway #Motorsport
+#Porsche #718GT4 #CaymanGT4 #HighPlainsRaceway #TrackTelemetry #MotorsportEngineering #DataDriven #HPDE #TrackDay #TimeAttack #Telemetry
 ```
 """
     with open(manifest_path, "w", encoding="utf-8") as f:

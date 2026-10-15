@@ -1,0 +1,66 @@
+{
+  "vehicle": {
+    "year": 2023,
+    "make": "Porsche",
+    "model": "718 Cayman GT4",
+    "generation": "982",
+    "engine": "4.0L Naturally Aspirated Flat-6 (414 hp)",
+    "color": "Guards Red",
+    "build_date": "May 2023"
+  },
+  "wheels": {
+    "brand": "Apex",
+    "model": "VS-5RE (Motorsport Forged)",
+    "front": "19x9.0\"",
+    "rear": "19x11.0\""
+  },
+  "tires": {
+    "brand": "Vitour",
+    "model": "Tempesta P1 (P-01R)",
+    "category": "Super-200TW",
+    "front": "265/35R19",
+    "rear": "295/30R19",
+    "cold_pressure_target_psi": [23.5, 24.0],
+    "hot_pressure_target_psi": {
+      "front": 30.5,
+      "rear": 31.0
+    }
+  },
+  "suspension": {
+    "shop": "Honest Assembly Garage (Denver, CO)",
+    "build_date": "April 2026",
+    "camber_plates": "Tarett Engineering Front Monoball Camber Plates",
+    "control_arms": "Tarett Engineering Front Monoball Control Arm Ends (with longer studs for aggressive camber)",
+    "rear_toe_links": "Tarett Engineering Rear Toe Control Arms / Locking Plates",
+    "thrust_arm_bushings": "Tarett Caster-Adjustable Thrust Arm Bushings (for 265 front tire clearance)",
+    "camber_shims": "Tarett GT3 Lower Control Arm Shims (10mm, 2mm, 1mm kit)",
+    "sway_bar_links": "Tarett Engineering Front (991 spec) & Rear Adjustable Drop Links (corner balance preload zeroed)",
+    "compliance": "Monoball spherical bearing conversion front and rear (OEM rubber deflection eliminated)"
+  },
+  "brakes": {
+    "rotors_front": "GiroDisc 380mm Two-Piece Floating Rotors",
+    "rotors_rear": "GiroDisc 380mm Two-Piece Floating Rotors",
+    "lines": "Spiegler Stainless Steel Braided Brake Lines (Front 4-Line + Rear Kit)",
+    "fluid": "Castrol React SRF Racing Brake Fluid"
+  },
+  "drivetrain": {
+    "transmission": "6-Speed Manual with Auto-Blip",
+    "fluid": "Fresh Transaxle Flush (April 2026)"
+  },
+  "aero": {
+    "front": "Fresh Front Splitter (April 2026)",
+    "rear": "OEM GT4 Wing"
+  },
+  "track": {
+    "home_track": "High Plains Raceway",
+    "configuration": "Full Course (2.55 miles, 15 turns)",
+    "official_pb": "1:56.55",
+    "pb_date": "October 2026"
+  },
+  "social": {
+    "youtube_channel": "Matthew Garrett",
+    "youtube_handle": "@mgarrettgt4",
+    "instagram_handle": "@mgarrettgt4",
+    "account_email": "mgarrettgt4@gmail.com"
+  }
+}

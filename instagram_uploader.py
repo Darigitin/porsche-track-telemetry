@@ -82,10 +82,68 @@ def upload_reel(video_path, caption):
         print(f"[ERROR] Reel upload failed: {e}")
         return None
 
+def upload_carousel(image_paths, caption):
+    """
+    Uploads a multi-slide image carousel / album to Instagram.
+    """
+    resolved_paths = []
+    for p in image_paths:
+        path_obj = Path(p)
+        if not path_obj.exists():
+            print(f"[ERROR] Carousel image not found: {p}")
+            return None
+        resolved_paths.append(path_obj)
+
+    cl = get_instagram_client()
+    print(f"\nUploading Instagram Carousel ({len(resolved_paths)} slides)...")
+    for i, p in enumerate(resolved_paths, 1):
+        print(f"  Slide {i}: {p.name}")
+    print(f"\nCaption preview:\n{caption[:140]}...\n")
+
+    try:
+        media = cl.album_upload(
+            paths=resolved_paths,
+            caption=caption
+        )
+        post_url = f"https://www.instagram.com/p/{media.code}/"
+        print(f"\n" + "="*70)
+        print("SUCCESS! Instagram Carousel published successfully:")
+        print(post_url)
+        print("="*70 + "\n")
+        return post_url
+    except Exception as e:
+        print(f"[ERROR] Carousel upload failed: {e}")
+        return None
+
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Upload a 9:16 video as an Instagram Reel.")
-    parser.add_argument("--file", required=True, help="Path to 9:16 MP4 video")
-    parser.add_argument("--caption", required=True, help="Reel caption text with hashtags")
+    parser = argparse.ArgumentParser(description="Upload Instagram Reels or Carousels using cached session.")
+    parser.add_argument("--file", help="Path to 9:16 MP4 video for Reel upload")
+    parser.add_argument("--carousel", nargs="+", help="List of image paths for Carousel upload")
+    parser.add_argument("--carousel-dir", help="Directory containing carousel slides to upload in alphabetical order")
+    parser.add_argument("--caption", help="Post caption text with hashtags")
+    parser.add_argument("--caption-file", help="Path to text file containing post caption")
     args = parser.parse_args()
 
-    upload_reel(args.file, args.caption)
+    caption = args.caption
+    if args.caption_file:
+        with open(args.caption_file, "r", encoding="utf-8") as f:
+            caption = f.read()
+
+    if not caption:
+        print("[ERROR] Please provide caption via --caption or --caption-file.")
+        sys.exit(1)
+
+    if args.file:
+        upload_reel(args.file, caption)
+    elif args.carousel:
+        upload_carousel(args.carousel, caption)
+    elif args.carousel_dir:
+        import glob
+        slides = sorted(glob.glob(os.path.join(args.carousel_dir, "slide_*.png")))
+        if not slides:
+            print(f"[ERROR] No slides matching 'slide_*.png' found in: {args.carousel_dir}")
+            sys.exit(1)
+        upload_carousel(slides, caption)
+    else:
+        print("[ERROR] Please provide either --file (for Reel) or --carousel / --carousel-dir (for Carousel).")
+        sys.exit(1)

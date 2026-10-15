@@ -37,21 +37,22 @@ flowchart TD
 * Extracts any new sessions into `Recording CSVs/` and Racelogic `Recording VBOs/`.
 
 ### 2. Stage 2: Multi-Year Analytics & Visual Charts
-* Updates [`detailed_lap_analysis.csv`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/detailed_lap_analysis.csv) (all 517 timed laps).
-* Updates [`analysis_summary.md`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/analysis_summary.md) (session breakdown table across all 61 sessions).
+* Updates [`detailed_lap_analysis.csv`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/detailed_lap_analysis.csv) (all 519 timed laps).
+* Updates [`reports/analysis_summary.md`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/reports/analysis_summary.md) (session breakdown table across all 61 sessions).
 * Regenerates all dark-mode motorsport charts in [`charts/`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/charts/):
-  * `best_lap_time_trend.png` — Lap time progression curve & PB frontier annotation (2:16 $\rightarrow$ 1:59.60).
+  * `best_lap_time_trend.png` — Lap time progression curve & PB frontier annotation (2:16 $\rightarrow$ 1:56.55).
   * `wot_throttle_progression.png` — Driver commitment (% of lap spent at Wide Open Throttle).
   * `max_gforce_trend.png` — Peak lateral grip & threshold braking deceleration evolution.
   * `max_speed_trend.png` — Straightaway top speed evolution (up to 134.8 mph).
   * `track_map_comparison.png` — GPS racing line map.
 
 ### 3. Stage 3: Driver Debrief & Consumables Inspection
-* Generates [`POST_EVENT_DEBRIEF.md`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/POST_EVENT_DEBRIEF.md):
+* Generates [`reports/POST_EVENT_DEBRIEF.md`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/reports/POST_EVENT_DEBRIEF.md):
   * Weekend best lap vs Top 5 average pace.
   * Consistency window (laps within 1.5s of PB).
   * Tire hot pressures (FL, FR, RL, RR) measured against the 30.5 PSI benchmark.
   * Historical drop from 2024 baseline.
+* Generates [`reports/rennlist_thread_bbcode.txt`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/reports/rennlist_thread_bbcode.txt) via [`generate_rennlist_thread.py`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/generate_rennlist_thread.py) for 1-click forum publishing.
 
 ### 4. Stage 4: Social Media Video Engine
 * Identifies highlight moments across 100,000+ CAN frames via [`telemetry_scout.py`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/telemetry_scout.py).
@@ -74,8 +75,8 @@ flowchart TD
 | **Monday Lunch** | **YouTube Shorts** | 9:16 Vertical (44s) | **Milestone Sprint Short** (44s finish line crossing — drives subscriber reach) |
 | **Monday Lunch** | **Instagram Reels** | 9:16 Vertical (44s) | **Milestone Sprint Reel** (44s finish line crossing hitting 1:59.62) |
 | **Tuesday** | **Instagram Carousel** | Multi-slide Images | **Data Progression Post** (Lap time trend, WOT %, lateral G charts from `charts/`) |
-| **Wednesday** | **YouTube Shorts** | 9:16 Vertical (20s) | **Peak Grip Short** (1.54G carousel apex at 81 mph) |
-| **Wednesday** | **Instagram Reels** | 9:16 Vertical (20s) | **Peak Grip Reel** (1.54G carousel apex at 81 mph) |
+| **Wednesday** | **YouTube Shorts** | 9:16 Vertical (20s) | **Peak Grip Short** (1.54G corkscrew apex at 81 mph) |
+| **Wednesday** | **Instagram Reels** | 9:16 Vertical (20s) | **Peak Grip Reel** (1.54G corkscrew apex at 81 mph) |
 | **Thursday** | **Instagram Reels** | 9:16 Vertical (2:01) | **Sunday Consistency Follow-up** (Back-to-back 2:00.12 lap) |
 | **Friday / Weekend** | **YouTube Playlist** | 1080p Full Sessions | **Full Session Archives** (Unlisted/Public for coaches & local HPR drivers) |
 

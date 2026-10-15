@@ -23,7 +23,11 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 import google.oauth2.credentials
 
-SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
+SCOPES = [
+    "https://www.googleapis.com/auth/youtube.upload",
+    "https://www.googleapis.com/auth/youtube.readonly",
+    "https://www.googleapis.com/auth/yt-analytics.readonly"
+]
 CLIENT_SECRETS_FILE = os.path.join(os.path.dirname(__file__), "client_secrets.json")
 TOKEN_FILE = os.path.join(os.path.dirname(__file__), "youtube_token.json")
 
@@ -76,10 +80,14 @@ def upload_video(file_path, title, description, tags=None, category="2", privacy
 
     youtube = get_authenticated_service()
 
+    # Sanitize title and description for YouTube API (< and > forbidden, max 100 chars)
+    clean_title = title.replace("<", "").replace(">", "").strip()[:100]
+    clean_desc = description.replace("<", "").replace(">", "").strip() if description else ""
+
     body = {
         "snippet": {
-            "title": title,
-            "description": description,
+            "title": clean_title,
+            "description": clean_desc,
             "tags": tags or ["Porsche", "718 Cayman GT4", "High Plains Raceway", "Track Day", "Telemetry"],
             "categoryId": category
         },
@@ -137,7 +145,13 @@ if __name__ == "__main__":
     parser.add_argument("--file", required=True, help="Path to video file")
     parser.add_argument("--title", required=True, help="Video title")
     parser.add_argument("--desc", default="", help="Video description")
+    parser.add_argument("--desc-file", help="Path to text file containing description")
     parser.add_argument("--privacy", default="unlisted", choices=["public", "unlisted", "private"])
     args = parser.parse_args()
 
-    upload_video(args.file, args.title, args.desc, privacy=args.privacy)
+    desc = args.desc
+    if args.desc_file:
+        with open(args.desc_file, "r", encoding="utf-8") as f:
+            desc = f.read()
+
+    upload_video(args.file, args.title, desc, privacy=args.privacy)

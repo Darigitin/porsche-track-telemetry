@@ -116,7 +116,7 @@ if __name__ == "__main__":
         stat_badge="BACK-TO-BACK SUNDAY PACE"
     )
 
-    # Example 2: Peak Lateral G Moment (1.54G through Turn 3 carousel at 81 mph)
+    # Example 2: Peak Lateral G Moment (1.54G through Turn 13-15 Corkscrew at 81 mph)
     print("\nGenerating Peak Grip Highlight (1.54G)...")
     clip_highlight_reel(
         video_file="2026-10-11 HPR-Full Sun-S2 (GT4) - Best 2m00.12s.mp4",
@@ -124,7 +124,7 @@ if __name__ == "__main__":
         duration_sec=20.0,
         output_name="2026-10-11_Sun_S2_1.54G_Peak_Grip_Reel_20s.mp4",
         title_text="1.54G PEAK LATERAL LOAD",
-        stat_badge="81 MPH CAROUSEL APEX"
+        stat_badge="81 MPH CORKSCREW APEX"
     )
 
     print(f"\nAll generated files available in: {EXPORT_DIR}")

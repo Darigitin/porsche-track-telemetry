@@ -9,7 +9,11 @@ import os
 import sys
 from google_auth_oauthlib.flow import InstalledAppFlow
 
-SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
+SCOPES = [
+    "https://www.googleapis.com/auth/youtube.upload",
+    "https://www.googleapis.com/auth/youtube.readonly",
+    "https://www.googleapis.com/auth/yt-analytics.readonly"
+]
 CLIENT_SECRETS_FILE = os.path.join(os.path.dirname(__file__), "client_secrets.json")
 TOKEN_FILE = os.path.join(os.path.dirname(__file__), "youtube_token.json")
 
@@ -31,7 +35,7 @@ def main():
         port=0,
         authorization_prompt_message="\nPLEASE OPEN THIS LINK IN YOUR BROWSER:\n{url}\n",
         success_message="Authentication successful! You can close this tab and return to the terminal.",
-        open_browser=False
+        open_browser=True
     )
 
     with open(TOKEN_FILE, "w") as f:

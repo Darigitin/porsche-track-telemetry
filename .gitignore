@@ -21,13 +21,24 @@ instagram_session.json
 # Large Databases & Raw Track Archives (>100MB)
 # ==========================================
 *.mdb
-*.tparecord
+*.zip
+backups/
+branding/archive/
+Track Photos/
 tpa_records/
+*.tparecord
 *.mp4
 *.mov
 *.avi
 *.mkv
 *.m4v
+
+# Scratch frames extracted during video analysis
+charts/video_frames/
+charts/test_vid_*.jpg
+charts/*frame*.jpg
+charts/real_*.jpg
+charts/crop_*.jpg
 
 # ==========================================
 # Verbose System & PTPA Logs
