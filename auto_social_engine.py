@@ -11,6 +11,7 @@ import os
 import sys
 import subprocess
 import time
+import argparse
 
 FFMPEG = r"C:\Users\Darig\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe"
 VIDEO_DIR = r"\\THOR\plex\Cayman Videos"
@@ -104,27 +105,38 @@ def clip_hot_lap_youtube(video_file, start_sec, duration_sec, output_name):
 if __name__ == "__main__":
     os.makedirs(EXPORT_DIR, exist_ok=True)
     
+    parser = argparse.ArgumentParser(description="Automated Track Social Media Engine")
+    parser.add_argument("--peak-grip", action="store_true", help="Render only the 20s 1.54G Corkscrew Peak Grip Reel")
+    parser.add_argument("--followup", action="store_true", help="Render only the Sunday S2 2:00.12 Follow-Up Reel")
+    args = parser.parse_args()
+
+    render_peak = args.peak_grip or (not args.peak_grip and not args.followup)
+    render_followup = args.followup or (not args.peak_grip and not args.followup)
+
     print("Automated Social Media Generator Ready.")
+
     # Example 1: Sunday S2 Best Lap (2:00.12) - The Sunday Follow-up Hot Lap
-    print("\nGenerating Sunday S2 2:00.12 Lap...")
-    clip_highlight_reel(
-        video_file="2026-10-11 HPR-Full Sun-S2 (GT4) - Best 2m00.12s.mp4",
-        start_sec=623.0, # 10:23.0
-        duration_sec=121.0,
-        output_name="2026-10-11_Sun_S2_GT4_2m00s_FollowUp_Reel.mp4",
-        title_text="2\\:00.12 CONSISTENCY RUN",
-        stat_badge="BACK-TO-BACK SUNDAY PACE"
-    )
+    if render_followup:
+        print("\nGenerating Sunday S2 2:00.12 Lap...")
+        clip_highlight_reel(
+            video_file="2026-10-11 HPR-Full Sun-S2 (GT4) - Best 2m00.12s.mp4",
+            start_sec=623.0, # 10:23.0
+            duration_sec=121.0,
+            output_name="2026-10-11_Sun_S2_GT4_2m00s_FollowUp_Reel.mp4",
+            title_text="2\\:00.12 CONSISTENCY RUN",
+            stat_badge="BACK-TO-BACK SUNDAY PACE"
+        )
 
     # Example 2: Peak Lateral G Moment (1.54G through Turn 13-15 Corkscrew at 81 mph)
-    print("\nGenerating Peak Grip Highlight (1.54G)...")
-    clip_highlight_reel(
-        video_file="2026-10-11 HPR-Full Sun-S2 (GT4) - Best 2m00.12s.mp4",
-        start_sec=1091.0, # 18:11.0 (5s before peak 18:21.5)
-        duration_sec=20.0,
-        output_name="2026-10-11_Sun_S2_1.54G_Peak_Grip_Reel_20s.mp4",
-        title_text="1.54G PEAK LATERAL LOAD",
-        stat_badge="81 MPH CORKSCREW APEX"
-    )
+    if render_peak:
+        print("\nGenerating Peak Grip Highlight (1.54G)...")
+        clip_highlight_reel(
+            video_file="2026-10-11 HPR-Full Sun-S2 (GT4) - Best 2m00.12s.mp4",
+            start_sec=1091.0, # 18:11.0 (5s before peak 18:21.5)
+            duration_sec=20.0,
+            output_name="2026-10-11_Sun_S2_1.54G_Peak_Grip_Reel_20s.mp4",
+            title_text="1.54G PEAK LATERAL LOAD",
+            stat_badge="81 MPH CORKSCREW APEX"
+        )
 
     print(f"\nAll generated files available in: {EXPORT_DIR}")
