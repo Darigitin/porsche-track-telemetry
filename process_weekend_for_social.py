@@ -121,7 +121,7 @@ Tire pressures dialed right to 30.5 PSI hot. Full session data and laps on the c
 ```text
 Finally cracked into the 1:50s at High Plains Raceway 🏁
 
-1:59.624 across the line in the 718 Cayman GT4. Two years of seat time dropping down from our first 2:16 baseline. Full lap with complete telemetry is up on YouTube!
+1:59.624 across the line in the 718 Cayman GT4. Two years of seat time dropping down from my first 2:16 baseline. Full lap with complete telemetry is up on YouTube!
 
 Save this for your next track day at HPR 📌 What milestone are you chasing this season?
 
@@ -177,7 +177,7 @@ Lap Time: 1:59.624
 ```text
 From 2:16.78 down to 1:59.62: What two years of CAN-bus telemetry and chassis setup look like in the 718 Cayman GT4 🏁⏱️
 
-When we first brought the car to High Plains Raceway in June 2024, our baseline was 2:16. Across 61 sessions and 519 timed laps, the CAN data showed three distinct breakthroughs:
+When I first brought the car to High Plains Raceway in June 2024, my baseline was 2:16. Across 61 sessions and 519 timed laps, the CAN data showed three distinct breakthroughs:
 
 1️⃣ Tire Pressure Discipline: Starting cold at 24 PSI and bleeding immediately after Session 1 down to a 30.5 PSI hot target unlocked 1.35G sustained grip (peaking at 1.54G in the Corkscrew) while keeping tires in their prime window all weekend.
 2️⃣ Trail Braking: Trailing off to ~15% brake pressure right down to apex loaded the front axle and cured the 718 GT4's natural high-speed entry push.
