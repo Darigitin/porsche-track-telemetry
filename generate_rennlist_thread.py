@@ -18,7 +18,7 @@ REPORTS_DIR.mkdir(exist_ok=True)
 def generate_rennlist_bbcode(
     vehicle_name="2023 Porsche 718 Cayman GT4",
     track_name="High Plains Raceway (Full Course - 2.55 Miles)",
-    all_time_pb="1:56.55",
+    all_time_pb="1:59.67",
     baseline_time="2:16.78",
     total_laps=519,
     total_sessions=61,
@@ -43,7 +43,7 @@ def generate_rennlist_bbcode(
     bb.append("")
     bb.append("[B][SIZE=4]📊 The 2-Year Progression & Telemetry Breakdown[/SIZE][/B]")
     bb.append("")
-    bb.append(f"• [B]Official Best Lap:[/B] 2:16.78  -->  [B]{all_time_pb}[/B]  [COLOR=Green][B](-20.23 seconds)[/B][/COLOR]")
+    bb.append(f"• [B]Official Best Lap:[/B] 2:16.78  -->  [B]{all_time_pb}[/B]  [COLOR=Green][B](-17.11 seconds)[/B][/COLOR]")
     bb.append("• [B]Back Straight Top Speed:[/B] 114.2 MPH  -->  [B]134.8 MPH[/B]  [COLOR=Green][B](+20.6 MPH)[/B][/COLOR]")
     bb.append("• [B]Wide Open Throttle (WOT %):[/B] 2.2% of lap  -->  [B]36.6% of lap[/B]  [COLOR=Green][B](+34.4% WOT)[/B][/COLOR]")
     bb.append("• [B]Peak Lateral Grip:[/B] 1.12 G  -->  [B]1.54 G[/B] (Turn 13-15 Prairie Corkscrew)")

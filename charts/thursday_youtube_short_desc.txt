@@ -1,0 +1,16 @@
+How Turn 3 exit momentum unlocked +20.6 MPH down the 2,838-foot back straight at High Plains Raceway.
+
+Looking at 10Hz CAN-bus telemetry exiting Turn 3 (The Carousel) in my 2023 Porsche 718 Cayman GT4:
+• WOT Commitment: Climbed from 2.2% of the lap (June 2024 baseline) up to 36.6% WOT.
+• The Technique: Using the Turn 3 apex curbing, letting the mid-engine chassis settle on the 295/30R19 rear Vitour Tempesta P1s (31.0 PSI hot), and unwinding steering lock in sync with progressive throttle application to hit 100% WOT at track-out.
+• The Result: Terminal velocity into the Turn 4 braking zone jumped from 114.2 MPH to 134.8 MPH (+20.6 MPH).
+
+🏁 Full 1440p PB Lap with complete telemetry: https://youtu.be/PRz7gJhED00
+Full Session Archives Playlist: https://www.youtube.com/playlist?list=PLTWhq01zbTaU
+
+Car: 2023 Porsche 718 Cayman GT4 (Guards Red, 6MT)
+Wheels/Tires: Apex VS-5RE Forged / Vitour Tempesta P1 (265/35R19 front, 295/30R19 rear)
+Brakes: GiroDisc 380mm rotors, Pagid RSL29, Castrol SRF
+Track: High Plains Raceway (Full Course)
+
+#Shorts #Porsche #718GT4 #HighPlainsRaceway #TrackTelemetry #Flat6 #TrackDay #HPDE

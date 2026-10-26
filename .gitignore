@@ -8,6 +8,7 @@ instagram_session.json
 *token*.json
 *secret*.json
 *session*.json
+*credentials*.json
 .env
 .env.*
 *.pem
@@ -25,6 +26,7 @@ instagram_session.json
 backups/
 branding/archive/
 Track Photos/
+DSC_*.jpg
 tpa_records/
 *.tparecord
 *.mp4

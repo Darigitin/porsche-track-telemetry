@@ -40,7 +40,7 @@ flowchart TD
 * Updates [`detailed_lap_analysis.csv`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/detailed_lap_analysis.csv) (all 519 timed laps).
 * Updates [`reports/analysis_summary.md`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/reports/analysis_summary.md) (session breakdown table across all 61 sessions).
 * Regenerates all dark-mode motorsport charts in [`charts/`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/charts/):
-  * `best_lap_time_trend.png` — Lap time progression curve & PB frontier annotation (2:16 $\rightarrow$ 1:56.55).
+  * `best_lap_time_trend.png` — Lap time progression curve & PB frontier annotation (2:16 $\rightarrow$ 1:59.67 PB / 1:56.55 Instructor Ref).
   * `wot_throttle_progression.png` — Driver commitment (% of lap spent at Wide Open Throttle).
   * `max_gforce_trend.png` — Peak lateral grip & threshold braking deceleration evolution.
   * `max_speed_trend.png` — Straightaway top speed evolution (up to 134.8 mph).

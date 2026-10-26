@@ -1,0 +1,13 @@
+Using progressive rear slip to rotate a mid-engine 718 Cayman GT4 at the apex 🏁⏱️
+
+One of my favorite traits of the Vitour Tempesta P1 (265/35R19 front, 295/30R19 rear) is how predictably it communicates at the limit of adhesion. When hot pressures are dialed to 30.5 PSI front / 31.0 PSI rear, the compound doesn't snap—it gives a progressive, controllable rotation that helps point the nose toward corner exit earlier.
+
+Looking at my 10Hz CAN telemetry from Saturday Session 1 at High Plains Raceway:
+• CAN Oversteer Channel (wpoOversteer): Spikes to 0.24 mid-corner while pulling 1.08G lateral load at 70.6 MPH.
+• Chassis Stability: With Tarett rear toe control arms and bump-steer locking plates eliminating dynamic toe deflection, the rear steps out linearly and catches cleanly with a quick wrist correction without upsetting platform balance.
+
+Full 1440p PB lap and complete session archives are up on YouTube (link in bio).
+
+Do you prefer a neutral/loose setup that rotates on command, or a planted rear end that lets you mash the throttle early? Drop your preference below! 👇
+
+#Porsche #718GT4 #CaymanGT4 #HighPlainsRaceway #Oversteer #CarControl #TrackTelemetry #VitourP1 #TarettEngineering #HPDE #TrackDay #MidEngine

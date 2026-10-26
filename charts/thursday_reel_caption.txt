@@ -1,0 +1,14 @@
+How Turn 3 exit momentum unlocked +20.6 MPH down the back straight 🏁⏱️
+
+Top speed at the end of a long straight isn't about horsepower—it's almost entirely determined by minimum apex speed and how early you can unwind the wheel to commit to Wide Open Throttle (WOT).
+
+Looking at my 10Hz CAN telemetry exiting Turn 3 (The Carousel) onto the 2,838-foot back straight at High Plains Raceway:
+• WOT Commitment: Increased from 2.2% of the lap in my June 2024 baseline up to 36.6% of the lap.
+• The Technique: Taking the Turn 3 apex curbing, letting the 718 GT4 settle onto the 295/30R19 rear Vitour Tempesta P1s (31.0 PSI hot), and squeezing smoothly to 100% throttle as I unwind steering lock toward track-out.
+• The Result: Back-straight terminal velocity before the Turn 4 braking zone climbed from 114.2 MPH to 134.8 MPH (+20.6 MPH)—gaining massive time before ever touching the brakes.
+
+Full 1440p PB lap with complete throttle, brake, and G-force telemetry is up on YouTube (link in bio).
+
+What's the highest terminal velocity you've hit on your home track's longest straight? Drop your numbers below! 👇
+
+#Porsche #718GT4 #CaymanGT4 #HighPlainsRaceway #TrackTelemetry #Flat6 #MotorsportEngineering #DataDriven #HPDE #TrackDay #TimeAttack #VitourP1 #ApexWheels

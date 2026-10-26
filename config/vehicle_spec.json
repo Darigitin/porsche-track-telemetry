@@ -54,7 +54,8 @@
   "track": {
     "home_track": "High Plains Raceway",
     "configuration": "Full Course (2.55 miles, 15 turns)",
-    "official_pb": "1:56.55",
+    "official_pb": "1:59.67",
+    "instructor_reference_lap": "1:56.55",
     "pb_date": "October 2026"
   },
   "social": {

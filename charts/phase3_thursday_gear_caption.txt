@@ -1,0 +1,13 @@
+How a single downshift into 3rd gear saved 0.300 seconds in one corner complex 🏁📊
+
+With the tall factory gearing in the 6-speed manual 718 Cayman GT4, it's tempting to leave the car in 4th gear through medium-speed corners to save a shift. Comparing my July CAN telemetry against my October PB telemetry through Turn 4 (Biker's Berm) and uphill into Turn 5 (Niagara Plunge) proved just how much time that leaves on the table:
+
+• July (Holding 4th Gear): 4,477 RPM at the apex -> +0.20G exit acceleration -> 79.1 MPH uphill into Turn 5.
+• October (Downshifting to 3rd Gear at 1,364m): 5,411 RPM at the apex -> +0.31G exit acceleration (+55% stronger pull) -> 84.7 MPH uphill into Turn 5 (+5.6 MPH).
+• Total Delta Saved Across T4–T5: Exactly 0.300 seconds purely from engine braking stability on turn-in and keeping the 4.0L flat-6 in the meat of its powerband pulling up the hill.
+
+Full 1440p PB lap with live telemetry overlays on YouTube (link in bio).
+
+Are there any corners at your home track where dropping an extra gear unlocked surprising time? 👇
+
+#Porsche #718GT4 #CaymanGT4 #ManualTransmission #SaveTheManuals #HighPlainsRaceway #TrackTelemetry #DataDriven #MotorsportEngineering #HPDE #TrackDay

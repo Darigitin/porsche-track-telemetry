@@ -16,6 +16,13 @@ import httplib2
 import random
 import time
 
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", line_buffering=True)
+        sys.stderr.reconfigure(encoding="utf-8", line_buffering=True)
+    except Exception:
+        pass
+
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaFileUpload
@@ -49,9 +56,15 @@ def get_authenticated_service():
         creds = google.oauth2.credentials.Credentials.from_authorized_user_file(TOKEN_FILE, SCOPES)
     
     if not creds or not creds.valid:
+        refreshed = False
         if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-        else:
+            try:
+                creds.refresh(Request())
+                refreshed = True
+            except Exception as e:
+                print(f"[WARN] Cached YouTube token expired/revoked ({e}). Launching browser re-authentication...")
+
+        if not refreshed:
             if not os.path.exists(CLIENT_SECRETS_FILE):
                 print(f"\n[ERROR] '{CLIENT_SECRETS_FILE}' not found!")
                 print("To enable 1-click automated YouTube uploading:")

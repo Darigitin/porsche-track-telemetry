@@ -1,0 +1,16 @@
+How trailing off the brake pedal cured factory 718 understeer at High Plains Raceway.
+
+Looking at 10Hz CAN-bus telemetry through Turn 4 (Biker's Berm):
+• Threshold spike: -1.25G peak deceleration in a straight line.
+• The Technique: Downshifting to 3rd gear under braking and bleeding off pedal pressure progressively, holding 10–15% trail brake pressure all the way down to the apex curb.
+• The Result: Kept the front tires loaded, rotated the rear predictably, and carried 84.7 MPH uphill into Turn 5—saving 0.300s through this complex alone.
+
+🏁 Full 1440p PB Lap with complete telemetry: https://youtu.be/PRz7gJhED00
+Full Session Archives Playlist: https://www.youtube.com/playlist?list=PLTWhq01zbTaU
+
+Car: 2023 Porsche 718 Cayman GT4 (Guards Red)
+Wheels/Tires: Apex VS-5RE / Vitour Tempesta P1 (265/35R19 front, 295/30R19 rear)
+Brakes: GiroDisc 380mm rotors, Pagid RSL29, Castrol SRF
+Track: High Plains Raceway (Full Course)
+
+#Shorts #Porsche #718GT4 #HighPlainsRaceway #TrackTelemetry #TrailBraking #TrackDay #HPDE

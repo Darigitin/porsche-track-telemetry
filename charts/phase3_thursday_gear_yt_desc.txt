@@ -1,0 +1,11 @@
+How downshifting to 3rd gear instead of holding 4th saved 0.300 seconds through Turn 4–5 at High Plains Raceway.
+
+Comparing July vs. October 10Hz CAN-bus telemetry in my 6-speed manual 2023 Porsche 718 Cayman GT4:
+• 4th Gear (July): 4,477 apex RPM | +0.20G exit pull | 79.1 MPH into Turn 5
+• 3rd Gear (October): 5,411 apex RPM | +0.31G exit pull | 84.7 MPH into Turn 5 (+5.6 MPH)
+• Time Gained: 0.300 seconds in a single complex from engine braking rotation and keeping the 4.0L flat-6 in its peak torque window up the hill.
+
+🏁 Full 1440p PB Lap with complete telemetry: https://youtu.be/PRz7gJhED00
+Full Session Archives Playlist: https://www.youtube.com/playlist?list=PLTWhq01zbTaU
+
+#Shorts #Porsche #718GT4 #ManualTransmission #HighPlainsRaceway #TrackTelemetry #TrackDay #HPDE

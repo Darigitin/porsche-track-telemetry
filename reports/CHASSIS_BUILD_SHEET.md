@@ -2,7 +2,7 @@
 **Builder:** Honest Assembly Garage (Denver, CO)  
 **Build Date:** April 2026 (Updated with fresh Vitour P1s September 2026)  
 **Vehicle:** 2023 718 Cayman GT4 (Guards Red, May 2023 Build)  
-**Personal Best:** 1:56.55 at High Plains Raceway (Full Course)
+**Personal Best:** 1:59.67 at High Plains Raceway (Full Course) | **Instructor Benchmark:** 1:56.55
 
 ---
 
@@ -28,6 +28,7 @@
 | **Rear Brake Rotors** | **GiroDisc 380mm 2-Piece Floating Rotors** | Full 380mm rear matching setup for heat absorption and balanced brake torque. |
 | **Brake Lines** | **Spiegler Stainless Steel Braided Lines (Front 4-Line + Rear Kit)** | Eliminates rubber hose ballooning under maximum pedal pressure; provides immediate, firm pedal feedback for micro trail-braking. |
 | **Brake Fluid** | **Castrol React SRF Racing Brake Fluid** | Wet boiling point of 518°F (270°C); impervious to pedal fade during back-to-back hot sessions in Colorado altitude. |
+| **Caliper Hardware** | **Tarett Caliper Stud Conversion Kit (Front & Rear)** | Protects aluminum upright threads from stripping during frequent pad swaps; turns caliper removal into a quick nut-only operation. |
 
 ### 🔍 Caliper Thermal Management & Piston Puck Evaluation
 Factory 718 GT4 Brembo calipers use ceramic pucks on the piston faces. Under sustained track heat, these pucks commonly chip, crack, or disintegrate. Porsche does not sell pucks separately (requiring full caliper replacement). 

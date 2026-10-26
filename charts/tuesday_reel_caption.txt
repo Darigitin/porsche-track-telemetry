@@ -1,0 +1,14 @@
+How trailing off the brake pedal cured factory 718 understeer 🏁⏱️
+
+Mid-engine platforms like the 718 Cayman GT4 hate abrupt brake releases. If you snap off the brake pedal before turn-in, the front end unweights, and you get that classic mid-corner push.
+
+Looking at my 10Hz CAN telemetry through Turn 4 (Biker's Berm) at High Plains Raceway:
+• Threshold spike: -1.25G peak deceleration in a straight line.
+• The Technique: Downshifting to 3rd gear under braking and bleeding off pedal pressure progressively, holding 10–15% trail brake pressure all the way down to the apex curb.
+• The Result: Kept the front tires loaded, rotated the rear predictably, and carried 84.7 MPH uphill into Turn 5—saving exactly 0.300 seconds through this complex alone.
+
+Full 1440p lap with throttle, brake pressure, and delta timer on YouTube (link in bio).
+
+How much brake pressure do you usually trail to the apex in your platform? Drop your thoughts below! 👇
+
+#Porsche #718GT4 #CaymanGT4 #HighPlainsRaceway #TrailBraking #TrackTelemetry #MotorsportEngineering #DataDriven #HPDE #TrackDay #TimeAttack #Brembo #GiroDisc

@@ -82,6 +82,34 @@ def upload_reel(video_path, caption):
         print(f"[ERROR] Reel upload failed: {e}")
         return None
 
+def upload_photo(image_path, caption):
+    """
+    Uploads a single photo to Instagram.
+    """
+    path_obj = Path(image_path)
+    if not path_obj.exists():
+        print(f"[ERROR] Photo not found: {image_path}")
+        return None
+
+    cl = get_instagram_client()
+    print(f"\nUploading Instagram Photo: '{path_obj.name}'...")
+    print(f"Caption preview:\n{caption[:140]}...\n")
+
+    try:
+        media = cl.photo_upload(
+            path=path_obj,
+            caption=caption
+        )
+        post_url = f"https://www.instagram.com/p/{media.code}/"
+        print(f"\n" + "="*70)
+        print("SUCCESS! Instagram Photo published successfully:")
+        print(post_url)
+        print("="*70 + "\n")
+        return post_url
+    except Exception as e:
+        print(f"[ERROR] Photo upload failed: {e}")
+        return None
+
 def upload_carousel(image_paths, caption):
     """
     Uploads a multi-slide image carousel / album to Instagram.
@@ -116,8 +144,9 @@ def upload_carousel(image_paths, caption):
         return None
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Upload Instagram Reels or Carousels using cached session.")
+    parser = argparse.ArgumentParser(description="Upload Instagram Reels, Photos, or Carousels using cached session.")
     parser.add_argument("--file", help="Path to 9:16 MP4 video for Reel upload")
+    parser.add_argument("--photo", help="Path to JPEG/PNG image for Photo upload")
     parser.add_argument("--carousel", nargs="+", help="List of image paths for Carousel upload")
     parser.add_argument("--carousel-dir", help="Directory containing carousel slides to upload in alphabetical order")
     parser.add_argument("--caption", help="Post caption text with hashtags")
@@ -135,6 +164,8 @@ if __name__ == "__main__":
 
     if args.file:
         upload_reel(args.file, caption)
+    elif args.photo:
+        upload_photo(args.photo, caption)
     elif args.carousel:
         upload_carousel(args.carousel, caption)
     elif args.carousel_dir:
@@ -145,5 +176,5 @@ if __name__ == "__main__":
             sys.exit(1)
         upload_carousel(slides, caption)
     else:
-        print("[ERROR] Please provide either --file (for Reel) or --carousel / --carousel-dir (for Carousel).")
+        print("[ERROR] Please provide either --file (for Reel), --photo (for Photo), or --carousel / --carousel-dir (for Carousel).")
         sys.exit(1)
