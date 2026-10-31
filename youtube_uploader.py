@@ -35,8 +35,11 @@ SCOPES = [
     "https://www.googleapis.com/auth/youtube.readonly",
     "https://www.googleapis.com/auth/yt-analytics.readonly"
 ]
-CLIENT_SECRETS_FILE = os.path.join(os.path.dirname(__file__), "client_secrets.json")
-TOKEN_FILE = os.path.join(os.path.dirname(__file__), "youtube_token.json")
+BASE_DIR = os.path.dirname(__file__)
+CLIENT_SECRETS_FILE = os.path.join(BASE_DIR, "client_secrets.json")
+CONFIG_SECRETS_FILE = os.path.join(BASE_DIR, "config", "client_secrets.json")
+TOKEN_FILE = os.path.join(BASE_DIR, "youtube_token.json")
+CONFIG_TOKEN_FILE = os.path.join(BASE_DIR, "config", "youtube_token.json")
 
 RETRIABLE_EXCEPTIONS = (
     httplib2.HttpLib2Error,
@@ -52,8 +55,10 @@ RETRIABLE_STATUS_CODES = [500, 502, 503, 504]
 
 def get_authenticated_service():
     creds = None
-    if os.path.exists(TOKEN_FILE):
-        creds = google.oauth2.credentials.Credentials.from_authorized_user_file(TOKEN_FILE, SCOPES)
+    token_path = TOKEN_FILE if os.path.exists(TOKEN_FILE) else CONFIG_TOKEN_FILE
+    secrets_path = CLIENT_SECRETS_FILE if os.path.exists(CLIENT_SECRETS_FILE) else CONFIG_SECRETS_FILE
+    if os.path.exists(token_path):
+        creds = google.oauth2.credentials.Credentials.from_authorized_user_file(token_path, SCOPES)
     
     if not creds or not creds.valid:
         refreshed = False
@@ -65,19 +70,22 @@ def get_authenticated_service():
                 print(f"[WARN] Cached YouTube token expired/revoked ({e}). Launching browser re-authentication...")
 
         if not refreshed:
-            if not os.path.exists(CLIENT_SECRETS_FILE):
-                print(f"\n[ERROR] '{CLIENT_SECRETS_FILE}' not found!")
+            if not os.path.exists(secrets_path):
+                print(f"\n[ERROR] '{secrets_path}' not found!")
                 print("To enable 1-click automated YouTube uploading:")
                 print("1. Go to https://console.cloud.google.com/apis/credentials")
                 print("2. Create an OAuth 2.0 Client ID (Application type: Desktop App)")
                 print("3. Download JSON and save it as 'client_secrets.json' in this project folder.\n")
                 sys.exit(1)
             
-            flow = InstalledAppFlow.from_client_secrets_file(CLIENT_SECRETS_FILE, SCOPES)
+            flow = InstalledAppFlow.from_client_secrets_file(secrets_path, SCOPES)
             creds = flow.run_local_server(port=0)
             
         with open(TOKEN_FILE, "w") as token:
             token.write(creds.to_json())
+        if os.path.exists(os.path.dirname(CONFIG_TOKEN_FILE)):
+            with open(CONFIG_TOKEN_FILE, "w") as token:
+                token.write(creds.to_json())
             
     return build("youtube", "v3", credentials=creds)
 

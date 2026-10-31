@@ -7,6 +7,7 @@ This file is automatically loaded by Antigravity at the start of every conversat
 ## 👤 Driver Profile
 * **Driver:** Matthew Garrett
 * **Tone & Voice:** First-person singular ("I", "my") — **never "we" or "our"** (Matthew is a solo driver). Humble, authentic, data-driven, engineering-focused. Avoid influencer hype or bragging.
+* **Community & Forum Reply Style (Reddit / Rennlist):** Write naturally like a real track driver typing a casual reply—keep it conversational, direct, and grounded. Avoid AI-style tells: no em-dashes (`—`), no bolded list headers, no numbered bullet breakdowns in normal comments, and no overly formal transitional filler.
 * **Home Track:** High Plains Raceway (Full Course — 2.55 miles, 15 turns)
 * **All-Time Personal Best:** **1:59.67** (October 2026)
 * **Instructor Reference Lap (PTPA Benchmark):** **1:56.55** *(Fastest reference lap tracked in PTPA from one of Matthew's instructors — DO NOT confuse with Matthew's personal best of 1:59.67)*

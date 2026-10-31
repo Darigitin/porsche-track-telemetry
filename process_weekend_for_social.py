@@ -54,24 +54,24 @@ Location: `{EXPORT_DIR}`
 
 ## 📺 YouTube Uploads
 
-### 1. Main Video: 1:59.62 All-Time Personal Best (1440p Master)
+### 1. Main Video: 1:59.67 All-Time Personal Best (1440p Master)
 * **File:** `{exports.get('youtube_1440p', {}).get('file', '')}`
 * **Format:** 1440p Landscape (16:9) — High Bitrate VP09/AV01 Codec
-* **Title:** `Porsche 718 Cayman GT4 | Breaking the 2-Minute Barrier at High Plains Raceway (1:59.62 PB) [Telemetry]`
+* **Title:** `Porsche 718 Cayman GT4 | Breaking the 2-Minute Barrier at High Plains Raceway (1:59.67 PB) [Telemetry]`
 * **Category:** Autos & Vehicles (ID: 2)
 * **Description:**
 ```text
 Breaking into the 1:50s at High Plains Raceway (Full Course) in the Porsche 718 Cayman GT4.
 
-Official Lap Time: 1:59.624 (Saturday Session 2, Lap 8)
+Official Lap Time: 1:59.67 (Saturday Session 2, Lap 8)
 Track: High Plains Raceway (2.55 miles, 15 turns)
 Vehicle: Porsche 718 Cayman GT4
 Telemetry / Data: Porsche Track Precision App (PTPA)
 
 Vehicle & Setup Notes:
-- Peak Lateral Grip: 1.29G (1.54G apex in Corkscrew / Turn 13-15)
+- Peak Lateral Grip: 1.35G sustained (1.54G apex in Corkscrew / Turn 13-15)
 - Hot Pressures: ~30.5 PSI target
-- Full 2-year progression: 2:16.78 (June 2024) -> 1:59.62 (October 2026)
+- Full 2-year progression: 2:16.78 (June 2024) -> 1:59.67 (October 2026)
 ```
 
 ---
@@ -81,17 +81,17 @@ Vehicle & Setup Notes:
 
 ### 1. Milestone Sprint Short (44s Finish Line Crossing)
 * **File:** `{exports.get('ig_highlight_44s', {}).get('file', '')}`
-* **Title:** `Sub-2:00 Barrier Broken! 1:59.62 PB in 718 Cayman GT4 #Shorts`
+* **Title:** `Sub-2:00 Barrier Broken! 1:59.67 PB in 718 Cayman GT4 #Shorts`
 * **Description:**
 ```text
-Crossing the line at 1:59.624 in the Porsche 718 Cayman GT4 at High Plains Raceway. 
+Crossing the line at 1:59.67 in the Porsche 718 Cayman GT4 at High Plains Raceway. 
 Full lap with complete 10Hz CAN-bus telemetry linked above!
 
 #Shorts #Porsche #718GT4 #HighPlainsRaceway #TrackDay #HPDE #Motorsport #Flat6
 ```
 * **Pinned Comment:**
 ```text
-Full 1:59.62 PB lap with complete throttle, brake, and G-force telemetry linked above! What's your personal best at HPR?
+Full 1:59.67 PB lap with complete throttle, brake, and G-force telemetry linked above! What's your personal best at HPR?
 ```
 
 ### 2. Peak Grip Short (20s Corkscrew Apex)
@@ -121,7 +121,7 @@ Tire pressures dialed right to 30.5 PSI hot. Full session data and laps on the c
 ```text
 Finally cracked into the 1:50s at High Plains Raceway 🏁
 
-1:59.624 across the line in the 718 Cayman GT4. Two years of seat time dropping down from my first 2:16 baseline. Full lap with complete telemetry is up on YouTube!
+1:59.67 across the line in the 718 Cayman GT4. Two years of seat time dropping down from my first 2:16 baseline. Full lap with complete telemetry is up on YouTube!
 
 Save this for your next track day at HPR 📌 What milestone are you chasing this season?
 
@@ -151,10 +151,10 @@ Would you carry this much apex speed or brake earlier for exit drive? Drop your 
 * **File:** `{exports.get('ig_full_lap', {}).get('file', '')}`
 * **Caption:**
 ```text
-Full 1:59.62 hot lap at High Plains Raceway, formatted for mobile. Watch the tachometer and delta clock through the downhill roller coaster. 
+Full 1:59.67 hot lap at High Plains Raceway, formatted for mobile. Watch the tachometer and delta clock through the downhill roller coaster. 
 
 Car: Porsche 718 Cayman GT4
-Lap Time: 1:59.624
+Lap Time: 1:59.67
 
 #Porsche #718GT4 #HighPlainsRaceway #TrackTelemetry #InCarFootage #Motorsport #GT4
 ```
@@ -167,7 +167,7 @@ Lap Time: 1:59.624
 * **Asset Directory:** `charts/carousel/` (Rendered via `python generate_carousel_slides.py`)
 * **Slide Formats:** 1080x1350 (4:5 vertical) in official Porsche Motorsport Livery
 * **Slide Lineup:**
-  1. Slide 01: 2-Year Progression Hero Card (`2:16.78` -> `1:59.62` PB)
+  1. Slide 01: 2-Year Progression Hero Card (`2:16.78` -> `1:59.67` PB)
   2. Slide 02: Lap Time Evolution across 61 sessions & 519 laps
   3. Slide 03: Racing Line Comparison (PB Red vs Benchmark White)
   4. Slide 04: Chassis Dynamics (Peak Lateral G & Braking Spike)
@@ -175,7 +175,7 @@ Lap Time: 1:59.624
   6. Slide 06: Engineering Debrief & Tire Pressure Benchmark
 * **Caption:** (From `charts/carousel/caption.txt`)
 ```text
-From 2:16.78 down to 1:59.62: What two years of CAN-bus telemetry and chassis setup look like in the 718 Cayman GT4 🏁⏱️
+From 2:16.78 down to 1:59.67: What two years of CAN-bus telemetry and chassis setup look like in the 718 Cayman GT4 🏁⏱️
 
 When I first brought the car to High Plains Raceway in June 2024, my baseline was 2:16. Across 61 sessions and 519 timed laps, the CAN data showed three distinct breakthroughs:
 

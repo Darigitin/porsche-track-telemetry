@@ -5,9 +5,9 @@ Official Porsche Motorsport Palette: Deep Carbon Black, Guards Red, and Pure Whi
 Renders high-impact 1080x1350 (4:5 vertical) carousel slides optimized for Instagram mobile feed.
 
 Slides:
-1. Cover: 2-Year Progression Hero Card (2:16.78 -> 1:59.62 PB)
+1. Cover: 2-Year Progression Hero Card (2:16.78 -> 1:59.67 PB)
 2. Lap Time Evolution: Chronological drop across 61 sessions & 519 laps
-3. Racing Line Comparison: 1:59.62 PB (Guards Red) vs 1:56.86 Benchmark (White) at HPR
+3. Racing Line Comparison: 1:59.67 PB (Guards Red) vs 1:56.55 Instructor Benchmark (White) at HPR
 4. Chassis Dynamics: Peak Lateral Grip (White) & Threshold Braking G (Guards Red)
 5. Throttle Commitment: Wide Open Throttle (WOT %) Progression (Guards Red)
 6. Engineering Debrief: Setup takeaways, tire pressures & driver insights
@@ -147,10 +147,10 @@ def generate_slide_1(df):
     overlay_ax.text(0.50, 0.665, "OFFICIAL ALL-TIME PERSONAL BEST", transform=overlay_ax.transAxes,
                     fontsize=12, fontweight='bold', color=COLOR_SILVER, ha='center')
     
-    overlay_ax.text(0.50, 0.560, "1:59.62", transform=overlay_ax.transAxes,
+    overlay_ax.text(0.50, 0.560, "1:59.67", transform=overlay_ax.transAxes,
                     fontsize=50, fontweight='bold', color=COLOR_WHITE, ha='center')
     
-    overlay_ax.text(0.50, 0.475, "DROPPED -17.16s FROM 2:16.78 BASELINE", transform=overlay_ax.transAxes,
+    overlay_ax.text(0.50, 0.475, "DROPPED -17.11s FROM 2:16.78 BASELINE", transform=overlay_ax.transAxes,
                     fontsize=12.5, fontweight='bold', color=COLOR_RED, ha='center')
 
     # 4 Quick Stat Metric Tiles (Porsche Tri-Color balance)
@@ -227,7 +227,7 @@ def generate_slide_2(df):
                "Tracking every personal record from June 2024 to October 2026")
     
     add_footer_box(overlay_ax, "Key Takeaway: The Step-Function Drops",
-                   "Lap times dropped in distinct plateaus: 2:16 baseline -> 2:09 braking\n-> 2:04 corner speed -> 1:59.62 PB with setup discipline.")
+                   "Lap times dropped in distinct plateaus: 2:16 baseline -> 2:09 braking\n-> 2:04 corner speed -> 1:59.67 PB with setup discipline.")
 
     outpath = os.path.join(CHART_DIR, "slide_02_lap_time_trend.png")
     plt.savefig(outpath, facecolor=COLOR_BG)
@@ -275,12 +275,12 @@ def generate_slide_3():
     # Benchmark in clean White dashed
     if bic_df is not None and 'longitude' in bic_df.columns:
         map_ax.plot(bic_df['longitude'], bic_df['latitude'],
-                    label=f"Benchmark: 1:56.86 (Reference)", color=COLOR_WHITE, linewidth=1.8,
+                    label=f"Instructor Benchmark: 1:56.55 (Reference)", color=COLOR_WHITE, linewidth=1.8,
                     linestyle='--', alpha=0.80, zorder=2)
     # GT4 Personal Best in Porsche Guards Red
     if user_df is not None and 'longitude' in user_df.columns:
         map_ax.plot(user_df['longitude'], user_df['latitude'],
-                    label=f"Personal Best: 1:59.60 (GT4)", color=COLOR_RED, linewidth=2.8, zorder=3)
+                    label=f"Personal Best: 1:59.67 (GT4)", color=COLOR_RED, linewidth=2.8, zorder=3)
         
     map_ax.set_title("High Plains Raceway (Full Course: 2.55 Miles, 15 Turns)",
                      fontsize=10.5, color=COLOR_WHITE, pad=10, fontweight='bold')
@@ -292,7 +292,7 @@ def generate_slide_3():
     map_ax.tick_params(colors=COLOR_SILVER, labelsize=8)
 
     add_header(overlay_ax, 3, 6, "RACING LINE COMPARISON", "GEOMETRY & TRACK POSITION",
-               "Comparing 1:59.62 PB against the 1:56.86 track benchmark")
+               "Comparing 1:59.67 PB against the 1:56.55 instructor benchmark")
 
     add_footer_box(overlay_ax, "Key Geometry Finding: Turn 3 Carousel",
                    "Wider entry into Turn 3 Carousel carried +4.8 mph apex speed.\nExit line now matches the benchmark trajectory onto the back straight.")
@@ -383,7 +383,7 @@ def generate_slide_6(df):
     fig, overlay_ax = create_slide_canvas()
 
     add_header(overlay_ax, 6, 6, "SUMMARY & SETUP", "THE 3 KEY LESSONS",
-               "What actually dropped 17.2 seconds at High Plains Raceway")
+               "What actually dropped 17.11 seconds at High Plains Raceway")
 
     # 3 Engineering Takeaway Cards with Porsche Motorsport Red/White accents
     cards = [

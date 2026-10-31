@@ -169,7 +169,7 @@ def main():
     
     # Title
     ax_info.text(0.06, 0.95, "TELEMETRY SECTORS & DELTA", fontsize=13, fontweight='bold', color=COLOR_WHITE, transform=ax_info.transAxes)
-    ax_info.text(0.06, 0.915, "1:59.599 PB vs. 1:56.862 Benchmark", fontsize=10, color=COLOR_SILVER, transform=ax_info.transAxes)
+    ax_info.text(0.06, 0.915, "1:59.67 PB vs. 1:56.55 Instructor Benchmark", fontsize=10, color=COLOR_SILVER, transform=ax_info.transAxes)
     
     y = 0.850
     y_step = 0.090

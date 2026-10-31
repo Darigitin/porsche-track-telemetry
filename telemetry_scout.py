@@ -62,9 +62,12 @@ def scan():
                 best_laps.append(session_best)
 
             # Telemetry samples
-            for sample in rec.get("data", []):
-                spd_kmh = sample.get("speed", 0)
-                spd_mph = spd_kmh * 0.621371
+            samples = rec.get("data", [])
+            max_raw_spd = max((s.get("speed", 0) for s in samples), default=0)
+            spd_scale = 2.23694 if max_raw_spd < 80 else 0.621371
+            for sample in samples:
+                spd_raw = sample.get("speed", 0)
+                spd_mph = spd_raw * spd_scale
                 if spd_mph < 35.0: # Ignore pit lane / stopped
                     continue
 

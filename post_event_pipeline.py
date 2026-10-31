@@ -101,7 +101,13 @@ def step_3_generate_driver_debrief():
     best_lap = all_laps[0] if all_laps else 0.0
     top_5_avg = np.mean(all_laps[:5]) if len(all_laps) >= 5 else best_lap
 
-    debrief_path = os.path.join(PROJECT_DIR, "POST_EVENT_DEBRIEF.md")
+    reports_dir = os.path.join(PROJECT_DIR, "reports")
+    os.makedirs(reports_dir, exist_ok=True)
+    debrief_path = os.path.join(reports_dir, "POST_EVENT_DEBRIEF.md")
+    fl_str = f"`{np.mean(pressures_fl):.1f} PSI`" if pressures_fl else "`N/A`"
+    fr_str = f"`{np.mean(pressures_fr):.1f} PSI`" if pressures_fr else "`N/A`"
+    rl_str = f"`{np.mean(pressures_rl):.1f} PSI`" if pressures_rl else "`N/A`"
+    rr_str = f"`{np.mean(pressures_rr):.1f} PSI`" if pressures_rr else "`N/A`"
     content = f"""# Post-Event Trackside Debrief & Consumables Inspection
 
 **Generated:** {time.strftime('%Y-%m-%d %H:%M:%S')}  
@@ -120,10 +126,10 @@ def step_3_generate_driver_debrief():
 ## 🛞 Chassis Dynamics & Tire Thermal Status
 * **Target Hot Pressure Benchmark:** `30.5 PSI`
 * **Recorded Hot Pressures (End of Stint Averages):**
-  * Front Left (FL): `{np.mean(pressures_fl):.1f} PSI` if available else `N/A`
-  * Front Right (FR): `{np.mean(pressures_fr):.1f} PSI` if available else `N/A`
-  * Rear Left (RL): `{np.mean(pressures_rl):.1f} PSI` if available else `N/A`
-  * Rear Right (RR): `{np.mean(pressures_rr):.1f} PSI` if available else `N/A`
+  * Front Left (FL): {fl_str}
+  * Front Right (FR): {fr_str}
+  * Rear Left (RL): {rl_str}
+  * Rear Right (RR): {rr_str}
 
 ---
 
@@ -132,11 +138,11 @@ def step_3_generate_driver_debrief():
 * **Current Personal Record:** **`{int(best_lap//60)}:{best_lap%60:06.3f}`**
 * **Total Progression Drop:** **`{(136.78 - best_lap):.2f} seconds`**
 * **Updated Charts Generated:**
-  * [`charts/best_lap_time_trend.png`](charts/best_lap_time_trend.png)
-  * [`charts/wot_throttle_progression.png`](charts/wot_throttle_progression.png)
-  * [`charts/max_gforce_trend.png`](charts/max_gforce_trend.png)
-  * [`charts/max_speed_trend.png`](charts/max_speed_trend.png)
-  * [`charts/track_map_comparison.png`](charts/track_map_comparison.png)
+  * [`charts/best_lap_time_trend.png`](../charts/best_lap_time_trend.png)
+  * [`charts/wot_throttle_progression.png`](../charts/wot_throttle_progression.png)
+  * [`charts/max_gforce_trend.png`](../charts/max_gforce_trend.png)
+  * [`charts/max_speed_trend.png`](../charts/max_speed_trend.png)
+  * [`charts/track_map_comparison.png`](../charts/track_map_comparison.png)
 """
     with open(debrief_path, "w", encoding="utf-8") as f:
         f.write(content)
@@ -181,18 +187,18 @@ def main():
         banner("Stage 5A: Automated YouTube Upload")
         yt_script = os.path.join(PROJECT_DIR, "youtube_uploader.py")
         pb_video = os.path.join(EXPORT_DIR, "2026-10-10_HPR_GT4_1m59s_PB_YouTube_1440p.mp4")
-        subprocess.run([sys.executable, yt_script, "--file", pb_video, "--title", "Porsche 718 Cayman GT4 | Sub-2:00 at High Plains Raceway (1:59.62 PB) [Telemetry]", "--privacy", "public"])
+        subprocess.run([sys.executable, yt_script, "--file", pb_video, "--title", "Porsche 718 Cayman GT4 | Sub-2:00 at High Plains Raceway (1:59.67 PB) [Telemetry]", "--privacy", "public"])
 
     if args.upload_instagram:
         banner("Stage 5B: Automated Instagram Upload")
         ig_script = os.path.join(PROJECT_DIR, "instagram_uploader.py")
         ig_video = os.path.join(EXPORT_DIR, "2026-10-10_HPR_GT4_1m59s_PB_Instagram_Highlight_44s.mp4")
-        caption = "Finally cracked into the 1:50s at High Plains Raceway 🏁 1:59.624 across the line in the 718 Cayman GT4. Full lap with telemetry on YouTube! #Porsche #718GT4 #HighPlainsRaceway #TrackDay"
+        caption = "Finally cracked into the 1:50s at High Plains Raceway 🏁 1:59.67 across the line in the 718 Cayman GT4. Full lap with telemetry on YouTube! #Porsche #718GT4 #HighPlainsRaceway #TrackDay"
         subprocess.run([sys.executable, ig_script, "--file", ig_video, "--caption", caption])
 
     banner(f"ALL POST-EVENT ACTIVITIES COMPLETED IN {time.time()-t0:.1f}s")
-    print(f"Summary Document: {os.path.join(PROJECT_DIR, 'POST_EVENT_DEBRIEF.md')}")
-    print(f"Full Session Log: {os.path.join(PROJECT_DIR, 'analysis_summary.md')}")
+    print(f"Summary Document: {os.path.join(PROJECT_DIR, 'reports', 'POST_EVENT_DEBRIEF.md')}")
+    print(f"Full Session Log: {os.path.join(PROJECT_DIR, 'reports', 'analysis_summary.md')}")
     print(f"Updated Charts:   {CHARTS_DIR}")
     print(f"Social Media:     {EXPORT_DIR}")
 

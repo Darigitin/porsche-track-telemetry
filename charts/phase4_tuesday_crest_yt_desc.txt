@@ -1,0 +1,10 @@
+How vertical load changes from the Turn 6 compression bowl over the Turn 7 blind crest at High Plains Raceway in my 2023 Porsche 718 Cayman GT4.
+
+Looking at 10Hz CAN-bus telemetry:
+• Turn 6 Compression Bowl: Heavy vertical compression loads the front axle to rotate at the 36.3 MPH apex.
+• Turn 7 Blind Crest: Accelerating uphill to 96.5 MPH over the blind rise—unwinding steering lock before the chassis goes light at the crest is critical to keeping the mid-engine platform planted.
+
+🏁 Full 1440p PB Lap with complete telemetry: https://youtu.be/PRz7gJhED00
+Full Session Archives Playlist: https://www.youtube.com/playlist?list=PLTWhq01zbTaU
+
+#Shorts #Porsche #718GT4 #HighPlainsRaceway #TrackTelemetry #VehicleDynamics #TrackDay #HPDE

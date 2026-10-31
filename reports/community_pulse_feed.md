@@ -1,6 +1,6 @@
 # ⚡ Daily Community Pulse & Action Brief
 
-*Generated on 2026-10-25 17:45:52 for Matthew Garrett (`/u/mgarrettgt4`)*
+*Generated on 2026-10-30 18:13:22 for Matthew Garrett (`/u/mgarrettgt4`)*
 
 ---
 
@@ -23,63 +23,63 @@
 
 ## 🎯 3. Today's Top Discussion & Karma Opportunities
 
-### 1. [IS500 at Grattan Raceway | Lap 3 vs Lap 6 | Best lap 1:46.73](https://www.reddit.com/r/CarTrackDays/comments/1xd145n/is500_at_grattan_raceway_lap_3_vs_lap_6_best_lap/)
-- **Subreddit:** `r/CarTrackDays` | **Author:** `/u/fahadfreid` | **Age:** 70.0h ago
+### 1. [What is this brake sound?](https://www.reddit.com/r/CarTrackDays/comments/1xjs7yu/what_is_this_brake_sound/)
+- **Subreddit:** `r/CarTrackDays` | **Author:** `/u/DrSuperZeco` | **Age:** 2.6h ago
 - **Engagement:** 1 upvotes, 0 comments
-- **Matched Topic:** **Brakes, Pads & Caliper Pucks** *(Keywords: `brake, brakes, pad, pads, fluid`)*
+- **Matched Topic:** **Brakes, Pads & Caliper Pucks** *(Keywords: `brake, pad, pads, fluid`)*
 
 **Recommended Technical Reply Draft:**
 > On my 718 GT4, I run GiroDisc 380mm floating rotors with Pagid RSL29 endurance pads and Castrol React SRF fluid, coupled with Spiegler stainless lines and Tarett caliper studs. If you track a 718/981 Cayman or 991, keep a close eye on the factory Brembo ceramic caliper pucks—they crack under severe track heat. Instead of spending $2k+ on boutique titanium pistons, Girodisc 1mm titanium pad heat shields (TS-1741) or Demon Speed / AutoQuest replacement pucks drastically lower thermal transfer to the pistons and protect your dust boots and fluid.
 
-[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/CarTrackDays/comments/1xd145n/is500_at_grattan_raceway_lap_3_vs_lap_6_best_lap/)
+[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/CarTrackDays/comments/1xjs7yu/what_is_this_brake_sound/)
 
 ---
 
-### 2. [Smeared pads up front, need to upgrade compound?](https://www.reddit.com/r/CarTrackDays/comments/1xeoqvg/smeared_pads_up_front_need_to_upgrade_compound/)
-- **Subreddit:** `r/CarTrackDays` | **Author:** `/u/AcceptableBanana1978` | **Age:** 22.9h ago
+### 2. [2:09 at Watkins Glen in my ratty f-body (95 Firebird)](https://www.reddit.com/r/CarTrackDays/comments/1xjhhzt/209_at_watkins_glen_in_my_ratty_fbody_95_firebird/)
+- **Subreddit:** `r/CarTrackDays` | **Author:** `/u/Catmaigne` | **Age:** 9.3h ago
 - **Engagement:** 1 upvotes, 0 comments
-- **Matched Topic:** **Brakes, Pads & Caliper Pucks** *(Keywords: `brake, brakes, pad, pads`)*
-
-**Recommended Technical Reply Draft:**
-> On my 718 GT4, I run GiroDisc 380mm floating rotors with Pagid RSL29 endurance pads and Castrol React SRF fluid, coupled with Spiegler stainless lines and Tarett caliper studs. If you track a 718/981 Cayman or 991, keep a close eye on the factory Brembo ceramic caliper pucks—they crack under severe track heat. Instead of spending $2k+ on boutique titanium pistons, Girodisc 1mm titanium pad heat shields (TS-1741) or Demon Speed / AutoQuest replacement pucks drastically lower thermal transfer to the pistons and protect your dust boots and fluid.
-
-[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/CarTrackDays/comments/1xeoqvg/smeared_pads_up_front_need_to_upgrade_compound/)
-
----
-
-### 3. [Belive it or not, these used to be slotted.](https://www.reddit.com/r/CarTrackDays/comments/1xenq80/belive_it_or_not_these_used_to_be_slotted/)
-- **Subreddit:** `r/CarTrackDays` | **Author:** `/u/KEVLAR60442` | **Age:** 23.7h ago
-- **Engagement:** 1 upvotes, 0 comments
-- **Matched Topic:** **Brakes, Pads & Caliper Pucks** *(Keywords: `pad, pads, rotor, rotors`)*
-
-**Recommended Technical Reply Draft:**
-> On my 718 GT4, I run GiroDisc 380mm floating rotors with Pagid RSL29 endurance pads and Castrol React SRF fluid, coupled with Spiegler stainless lines and Tarett caliper studs. If you track a 718/981 Cayman or 991, keep a close eye on the factory Brembo ceramic caliper pucks—they crack under severe track heat. Instead of spending $2k+ on boutique titanium pistons, Girodisc 1mm titanium pad heat shields (TS-1741) or Demon Speed / AutoQuest replacement pucks drastically lower thermal transfer to the pistons and protect your dust boots and fluid.
-
-[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/CarTrackDays/comments/1xenq80/belive_it_or_not_these_used_to_be_slotted/)
-
----
-
-### 4. [Can I lower my pressures?](https://www.reddit.com/r/CarTrackDays/comments/1xfe4cu/can_i_lower_my_pressures/)
-- **Subreddit:** `r/CarTrackDays` | **Author:** `/u/FutureNickProblems` | **Age:** 2.5h ago
-- **Engagement:** 1 upvotes, 0 comments
-- **Matched Topic:** **Tire Pressures & 200TW Compounds** *(Keywords: `tire, tires, pressure`)*
+- **Matched Topic:** **Tire Pressures & 200TW Compounds** *(Keywords: `tire, tires, vitour`)*
 
 **Recommended Technical Reply Draft:**
 > I run a 2023 718 Cayman GT4 on 19" Apex VS-5RE forged wheels with Vitour Tempesta P1s (265/35R19 front, 295/30R19 rear). For 200TW tires like these, I start cold at 23.5–24.0 PSI to hit an exact hot target of 30.5 PSI Front / 31.0 PSI Rear. In my telemetry, crossing over 32.5 PSI hot immediately causes mid-corner greasy slip and costs tenths on corner exit. Dials in sustained 1.35G and 1.54G peak cornering without rolling over onto the sidewalls.
 
-[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/CarTrackDays/comments/1xfe4cu/can_i_lower_my_pressures/)
+[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/CarTrackDays/comments/1xjhhzt/209_at_watkins_glen_in_my_ratty_fbody_95_firebird/)
 
 ---
 
-### 5. [My first ever track day. VW Golf R Mk8.5 BE. Abingdon, Oxfordshire UK.](https://www.reddit.com/r/CarTrackDays/comments/1xdgce3/my_first_ever_track_day_vw_golf_r_mk85_be/)
-- **Subreddit:** `r/CarTrackDays` | **Author:** `/u/jc84ox` | **Age:** 56.8h ago
+### 3. [I thought Race Navigator is the best thing on the market, but I was wrong](https://www.reddit.com/r/CarTrackDays/comments/1xjfiuy/i_thought_race_navigator_is_the_best_thing_on_the/)
+- **Subreddit:** `r/CarTrackDays` | **Author:** `/u/kondormit` | **Age:** 10.7h ago
 - **Engagement:** 1 upvotes, 0 comments
-- **Matched Topic:** **Brakes, Pads & Caliper Pucks** *(Keywords: `brake, brakes`)*
+- **Matched Topic:** **Data Analysis & VBO / CSV Logging** *(Keywords: `telemetry, vbo, circuit tools`)*
+
+**Recommended Technical Reply Draft:**
+> I log all my sessions on my 718 GT4 via CAN telemetry and analyze them in Circuit Tools / Python. When analyzing lap delta traces, look specifically for coasting dead-zones where throttle and brake are both 0%, and compare minimum apex speeds versus brake release rate. Carrying just 10-15% trail brake down to the apex often keeps the front axle loaded and cures corner-entry push.
+
+[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/CarTrackDays/comments/1xjfiuy/i_thought_race_navigator_is_the_best_thing_on_the/)
+
+---
+
+### 4. [They’re so beautiful](https://www.reddit.com/r/Porsche_Cayman/comments/1xj9w98/theyre_so_beautiful/)
+- **Subreddit:** `r/Porsche_Cayman` | **Author:** `/u/SignHere____________` | **Age:** 15.6h ago
+- **Engagement:** 1 upvotes, 0 comments
+- **Matched Topic:** **Brakes, Pads & Caliper Pucks** *(Keywords: `brake, brakes, fluid`)*
 
 **Recommended Technical Reply Draft:**
 > On my 718 GT4, I run GiroDisc 380mm floating rotors with Pagid RSL29 endurance pads and Castrol React SRF fluid, coupled with Spiegler stainless lines and Tarett caliper studs. If you track a 718/981 Cayman or 991, keep a close eye on the factory Brembo ceramic caliper pucks—they crack under severe track heat. Instead of spending $2k+ on boutique titanium pistons, Girodisc 1mm titanium pad heat shields (TS-1741) or Demon Speed / AutoQuest replacement pucks drastically lower thermal transfer to the pistons and protect your dust boots and fluid.
 
-[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/CarTrackDays/comments/1xdgce3/my_first_ever_track_day_vw_golf_r_mk85_be/)
+[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/Porsche_Cayman/comments/1xj9w98/theyre_so_beautiful/)
+
+---
+
+### 5. [Trying to keep up with a C8 corvette in my ‘23 Supra MT](https://www.reddit.com/r/CarTrackDays/comments/1xjifo8/trying_to_keep_up_with_a_c8_corvette_in_my_23/)
+- **Subreddit:** `r/CarTrackDays` | **Author:** `/u/MidEastBeast777` | **Age:** 8.7h ago
+- **Engagement:** 1 upvotes, 0 comments
+- **Matched Topic:** **Tire Pressures & 200TW Compounds** *(Keywords: `tire, tires`)*
+
+**Recommended Technical Reply Draft:**
+> I run a 2023 718 Cayman GT4 on 19" Apex VS-5RE forged wheels with Vitour Tempesta P1s (265/35R19 front, 295/30R19 rear). For 200TW tires like these, I start cold at 23.5–24.0 PSI to hit an exact hot target of 30.5 PSI Front / 31.0 PSI Rear. In my telemetry, crossing over 32.5 PSI hot immediately causes mid-corner greasy slip and costs tenths on corner exit. Dials in sustained 1.35G and 1.54G peak cornering without rolling over onto the sidewalls.
+
+[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/CarTrackDays/comments/1xjifo8/trying_to_keep_up_with_a_c8_corvette_in_my_23/)
 
 ---
 

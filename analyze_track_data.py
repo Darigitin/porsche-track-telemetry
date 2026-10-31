@@ -249,7 +249,9 @@ def main():
     df_display = df_markdown[summary_cols].rename(columns={'Date_Formatted': 'Date'})
     markdown_table = df_display.to_markdown(index=False)
     
-    with open('analysis_summary.md', 'w') as f:
+    os.makedirs('reports', exist_ok=True)
+    summary_path = os.path.join('reports', 'analysis_summary.md')
+    with open(summary_path, 'w', encoding='utf-8') as f:
         f.write("# Porsche Track Precision Analysis (2-Year Progression)\n\n")
         f.write(f"**Vehicle:** Porsche 718 Cayman GT4 | **Track:** High Plains Raceway (Full Course)\n\n")
         f.write(f"**Total Sessions:** {len(df_markdown)} | **Total Timed Laps:** {len(detailed_laps_results)}\n\n")
@@ -257,7 +259,7 @@ def main():
         f.write(markdown_table)
         f.write("\n")
         
-    print("Generated updated analysis_summary.md")
+    print(f"Generated updated {summary_path}")
     
     # Set dark motorsport style for all plots
     os.makedirs('charts', exist_ok=True)

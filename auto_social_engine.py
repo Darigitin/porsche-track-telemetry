@@ -124,8 +124,11 @@ if __name__ == "__main__":
     parser.add_argument("--wot", action="store_true", help="Render 20s Turn 3 Carousel Exit to Back Straight WOT Reel")
     parser.add_argument("--oversteer", action="store_true", help="Render 20s Chassis Rotation / Oversteer Catch Reel")
     parser.add_argument("--gear-delta", action="store_true", help="Render 20s Turn 4 3rd vs 4th Gear Selection Reel")
+    parser.add_argument("--blind-crest", action="store_true", help="Render 20s Turn 6-7 Bowl Compression to Blind Crest Reel")
+    parser.add_argument("--back-scurves", action="store_true", help="Render 20s Turn 8-10 Technical S-Curves Reel")
     parser.add_argument("--all-next-week", action="store_true", help="Render all Phase 2 reels (Trail-Braking and WOT)")
     parser.add_argument("--phase3", action="store_true", help="Render all Phase 3 reels (Oversteer Rotation and 3rd Gear Delta)")
+    parser.add_argument("--phase4", action="store_true", help="Render all Phase 4 reels (T6-T7 Blind Crest and T8-T10 S-Curves)")
     args = parser.parse_args()
 
     render_peak = args.peak_grip
@@ -134,8 +137,10 @@ if __name__ == "__main__":
     render_wot = args.wot or args.all_next_week
     render_oversteer = args.oversteer or args.phase3
     render_gear_delta = args.gear_delta or args.phase3
+    render_blind_crest = args.blind_crest or args.phase4
+    render_back_scurves = args.back_scurves or args.phase4
 
-    if not any([args.peak_grip, args.followup, args.trail_braking, args.wot, args.all_next_week, args.oversteer, args.gear_delta, args.phase3]):
+    if not any([args.peak_grip, args.followup, args.trail_braking, args.wot, args.all_next_week, args.oversteer, args.gear_delta, args.phase3, args.blind_crest, args.back_scurves, args.phase4]):
         render_peak = True
         render_followup = True
 
@@ -211,6 +216,30 @@ if __name__ == "__main__":
             output_name="2026-10-10_Sat_S2_GT4_3rd_Gear_Revelation_Reel_20s.mp4",
             title_text="3RD vs 4TH GEAR TELEMETRY",
             stat_badge="+0.300s GAINED | 5411 APEX RPM"
+        )
+
+    # Phase 4 Clip 1: Turns 6-7 Compression Bowl to Blind Crest Unload
+    if render_blind_crest:
+        print("\nGenerating Phase 4 Tuesday Clip: Turns 6-7 Bowl Compression to Blind Crest (96.5 MPH)...")
+        clip_highlight_reel(
+            video_file="2026-10-10 HPR-Full Sat-S2 Lap 8 (GT4) - 1m59.624s [PB Clip].mp4",
+            start_sec=65.0,
+            duration_sec=20.0,
+            output_name="2026-10-10_Sat_S2_GT4_T6_T7_Blind_Crest_Reel_20s.mp4",
+            title_text="BLIND CREST COMPRESSION",
+            stat_badge="T6 BOWL TO T7 CREST | 96.5 MPH"
+        )
+
+    # Phase 4 Clip 2: Turns 8-10 Technical Back-Half S-Curves (-0.26s vs Pro Benchmark)
+    if render_back_scurves:
+        print("\nGenerating Phase 4 Thursday Clip: Turns 8-10 Technical S-Curves (-0.26s Sector Gain)...")
+        clip_highlight_reel(
+            video_file="2026-10-10 HPR-Full Sat-S2 Lap 8 (GT4) - 1m59.624s [PB Clip].mp4",
+            start_sec=83.0,
+            duration_sec=20.0,
+            output_name="2026-10-10_Sat_S2_GT4_T8_T10_Technical_Complex_Reel_20s.mp4",
+            title_text="TECHNICAL S-CURVE FLOW",
+            stat_badge="TURNS 8-10 | 99.2 MPH | 1.35G"
         )
 
     print(f"\nAll generated files available in: {EXPORT_DIR}")

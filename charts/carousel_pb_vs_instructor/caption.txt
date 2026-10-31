@@ -1,0 +1,14 @@
+Overlaying my 1:59.67 PB against my instructor's 1:56.55 reference lap in a 718 Cayman GT4: where the final 3.1 seconds actually hide 🏁📊
+
+Dropping 17 seconds from my 2:16 baseline down to a 1:59.67 was about fixing big technique habits and dialing in the chassis. Finding the next 3 seconds from 1:59 down to a 1:56 is a game of inches and pedal discipline.
+
+Swipe through the 10Hz CAN telemetry comparison for what surprised me most:
+
+1️⃣ Mechanical Grip Is Already There: Average cornering load (>0.5G) was nearly identical (0.97G vs 0.96G), and through the technical Turns 8–10 S-curves my GT4 actually pulled 0.26s back on the benchmark thanks to the Tarett monoball setup and 265/295 Vitour P1s.
+2️⃣ Initial Brake Attack (81.9 bar vs 111.6 bar): Hitting harder initial pedal pressure right at the brake zone while aero drag is highest lets the reference lap brake 15–20 ft deeper into T1 and T4.
+3️⃣ Two Key Corner Exits (+1.16s combined): Carrying +5.9 MPH out of Turn 3 onto the 2,838 ft back straight (+0.60s) and rolling +6.5 MPH through the downhill Corkscrew compression (+0.56s).
+4️⃣ Pedal Transition Coasting (7.7% vs 4.1%): Cutting out hesitation between brake release and throttle pickup.
+
+When you overlay your data against a faster driver or coach, where do you usually find the biggest time delta? 👇
+
+#Porsche #718GT4 #CaymanGT4 #HighPlainsRaceway #TrackTelemetry #DataAnalysis #MotorsportEngineering #TarettEngineering #VitourP1 #HPDE #TrackDay #PCA

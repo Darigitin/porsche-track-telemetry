@@ -8,6 +8,7 @@ import os
 import sys
 import datetime
 from googleapiclient.discovery import build
+from google_auth_oauthlib.flow import InstalledAppFlow
 import google.oauth2.credentials
 from google.auth.transport.requests import Request
 
@@ -23,18 +24,40 @@ SCOPES = [
     "https://www.googleapis.com/auth/youtube.readonly",
     "https://www.googleapis.com/auth/yt-analytics.readonly"
 ]
-TOKEN_FILE = os.path.join(os.path.dirname(__file__), "youtube_token.json")
+BASE_DIR = os.path.dirname(__file__)
+TOKEN_FILE = os.path.join(BASE_DIR, "youtube_token.json")
+CONFIG_TOKEN_FILE = os.path.join(BASE_DIR, "config", "youtube_token.json")
+CLIENT_SECRETS_FILE = os.path.join(BASE_DIR, "client_secrets.json")
+CONFIG_SECRETS_FILE = os.path.join(BASE_DIR, "config", "client_secrets.json")
 
 def get_services():
-    if not os.path.exists(TOKEN_FILE):
-        print(f"[ERROR] Token file '{TOKEN_FILE}' not found. Please run 'python auth_youtube.py' first.")
-        sys.exit(1)
-        
-    creds = google.oauth2.credentials.Credentials.from_authorized_user_file(TOKEN_FILE, SCOPES)
-    if creds.expired and creds.refresh_token:
-        creds.refresh(Request())
+    token_path = TOKEN_FILE if os.path.exists(TOKEN_FILE) else CONFIG_TOKEN_FILE
+    secrets_path = CLIENT_SECRETS_FILE if os.path.exists(CLIENT_SECRETS_FILE) else CONFIG_SECRETS_FILE
+    creds = None
+    if os.path.exists(token_path):
+        creds = google.oauth2.credentials.Credentials.from_authorized_user_file(token_path, SCOPES)
+
+    if not creds or not creds.valid:
+        refreshed = False
+        if creds and creds.expired and creds.refresh_token:
+            try:
+                creds.refresh(Request())
+                refreshed = True
+            except Exception as e:
+                print(f"[WARN] Cached YouTube token expired/revoked ({e}). Launching browser re-authentication...")
+
+        if not refreshed:
+            if not os.path.exists(secrets_path):
+                print(f"[ERROR] '{secrets_path}' not found. Please run 'python auth_youtube.py' first.")
+                sys.exit(1)
+            flow = InstalledAppFlow.from_client_secrets_file(secrets_path, SCOPES)
+            creds = flow.run_local_server(port=0)
+
         with open(TOKEN_FILE, "w") as f:
             f.write(creds.to_json())
+        if os.path.exists(os.path.dirname(CONFIG_TOKEN_FILE)):
+            with open(CONFIG_TOKEN_FILE, "w") as f:
+                f.write(creds.to_json())
             
     yt_data = build("youtube", "v3", credentials=creds)
     yt_analytics = build("youtubeAnalytics", "v2", credentials=creds)

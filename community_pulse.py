@@ -274,20 +274,23 @@ def scout_reddit_threads(session_client, limit=20):
                 except Exception:
                     pass
 
-    # Fallback to RSS feed if unauthenticated or no opportunities returned via JSON
+    # Fallback to combined multi-subreddit RSS feed if unauthenticated or no opportunities returned via JSON
     if not opportunities:
         import time
         import xml.etree.ElementTree as ET
         ns = {'atom': 'http://www.w3.org/2005/Atom'}
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36'}
-        for idx, sub_name in enumerate(TARGET_SUBREDDITS):
-            if idx > 0:
-                time.sleep(2.0)
-            rss_url = f"https://www.reddit.com/r/{sub_name}/new/.rss"
-            try:
-                req = urllib.request.Request(rss_url, headers=headers)
-                xml_data = urllib.request.urlopen(req, timeout=10).read()
-                root = ET.fromstring(xml_data)
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0'}
+        combined_subs = "+".join(TARGET_SUBREDDITS)
+        rss_url = f"https://www.reddit.com/r/{combined_subs}/new/.rss?limit=50"
+        try:
+            r = requests.get(rss_url, headers=headers, timeout=10)
+            if r.status_code == 429:
+                wait_s = int(float(r.headers.get("x-ratelimit-reset", 15))) + 1
+                print(f"  [INFO] Waiting {wait_s}s for Reddit RSS rate-limit reset...")
+                time.sleep(wait_s)
+                r = requests.get(rss_url, headers=headers, timeout=10)
+            if r.status_code == 200:
+                root = ET.fromstring(r.text)
                 for entry in root.findall('atom:entry', ns):
                     pid_elem = entry.find('atom:id', ns)
                     pid = pid_elem.text if pid_elem is not None else ""
@@ -297,7 +300,7 @@ def scout_reddit_threads(session_client, limit=20):
 
                     author_elem = entry.find('atom:author/atom:name', ns)
                     author = (author_elem.text or "unknown").replace("/u/", "") if author_elem is not None else "unknown"
-                    if author == "mgarrettgt4":
+                    if author.lower() == "mgarrettgt4":
                         continue
 
                     updated_elem = entry.find('atom:updated', ns)
@@ -315,6 +318,8 @@ def scout_reddit_threads(session_client, limit=20):
                     title = title_elem.text if title_elem is not None else ""
                     link_elem = entry.find('atom:link', ns)
                     link = link_elem.attrib.get('href', '') if link_elem is not None else ""
+                    cat_elem = entry.find('atom:category', ns)
+                    sub_name = cat_elem.attrib.get('term', 'CarTrackDays') if cat_elem is not None else "CarTrackDays"
                     content_elem = entry.find('atom:content', ns)
                     raw_html = content_elem.text if content_elem is not None else ""
                     selftext = re.sub(r'<[^>]+>', ' ', raw_html)
@@ -334,8 +339,10 @@ def scout_reddit_threads(session_client, limit=20):
                             "keywords": best_match["matched_keywords"],
                             "draft": best_match["profile"]["draft_template"]
                         })
-            except Exception as e:
-                print(f"  [WARN] RSS scout warning for r/{sub_name}: {e}")
+            else:
+                print(f"  [WARN] RSS scout returned HTTP {r.status_code}")
+        except Exception as e:
+            print(f"  [WARN] RSS scout warning: {e}")
 
     opportunities.sort(key=lambda x: (len(x["keywords"]), -x["age_hours"]), reverse=True)
     return opportunities
