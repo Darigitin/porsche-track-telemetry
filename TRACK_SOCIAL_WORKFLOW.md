@@ -102,9 +102,9 @@ While both platforms use 9:16 vertical video, they cater to very different viewe
 | Day | Platform | Format | Published Content & Live Links |
 | :--- | :--- | :--- | :--- |
 | **Sunday / Monday** | **YouTube Main** | 1440p Landscape (16:9) | **Weekend Hero Lap** (Official PB 1440p Master) — [Watch on YouTube](https://youtu.be/PRz7gJhED00) |
-| **Monday Lunch** | **YouTube Shorts** | 9:16 Vertical (44s) | **Milestone Sprint Short** (44s finish line crossing hitting 1:59.62) |
+| **Monday Lunch** | **YouTube Shorts** | 9:16 Vertical (44s) | **Milestone Sprint Short** (44s finish line crossing hitting 1:59.67) |
 | **Monday Lunch** | **Instagram Reels** | 9:16 Vertical (44s) | **Milestone Sprint Reel** — [View Reel](https://www.instagram.com/reel/Dehh9HZRDYf/) |
-| **Tuesday** | **Instagram Carousel** | 6-Slide Livery Deck | **2-Year Data Progression Post** (2:16 to 1:59.62) — [View Carousel](https://www.instagram.com/p/DegAcwpEfNW/) |
+| **Tuesday** | **Instagram Carousel** | 6-Slide Livery Deck | **2-Year Data Progression Post** (2:16 to 1:59.67) — [View Carousel](https://www.instagram.com/p/DegAcwpEfNW/) |
 | **Wednesday** | **YouTube Shorts** | 9:16 Vertical (20s) | **Peak Grip Short** (1.54G corkscrew apex at 81 mph) |
 | **Wednesday** | **Instagram Reels** | 9:16 Vertical (20s) | **Peak Grip Reel** — [View Reel](https://www.instagram.com/reel/DekDARfxKWn/) |
 | **Thursday** | **Instagram Reels** | 9:16 Vertical (2:01) | **Sunday Consistency Follow-up** (Rolled into Phase 2 Saturday drop) |
@@ -118,7 +118,7 @@ While both platforms use 9:16 vertical video, they cater to very different viewe
 1. Ensure your one-time Google OAuth `client_secrets.json` is in the project folder.
 2. Run:
 ```bash
-python youtube_uploader.py --file "\\THOR\plex\Cayman Videos\Social Exports\2026-10-10_HPR_GT4_1m59s_PB_YouTube_1440p.mp4" --title "Porsche 718 Cayman GT4 | Sub-2:00 at High Plains Raceway (1:59.62 PB)" --privacy public
+python youtube_uploader.py --file "\\THOR\plex\Cayman Videos\Social Exports\2026-10-10_HPR_GT4_1m59s_PB_YouTube_1440p.mp4" --title "Porsche 718 Cayman GT4 | Sub-2:00 at High Plains Raceway (1:59.67 PB)" --privacy public
 ```
 
 ### Instagram Reel Upload (Personal Account):
@@ -130,7 +130,7 @@ python auth_instagram.py
 
 2. **Publish Reel** (100% automated using cached session):
 ```bash
-python instagram_uploader.py --file "\\THOR\plex\Cayman Videos\Social Exports\2026-10-10_HPR_GT4_1m59s_PB_Instagram_Highlight_44s.mp4" --caption "Finally cracked the 2-minute barrier at High Plains Raceway 🏁 1:59.62 in the 718 GT4! Full lap on YouTube #Porsche #718GT4 #TrackDay"
+python instagram_uploader.py --file "\\THOR\plex\Cayman Videos\Social Exports\2026-10-10_HPR_GT4_1m59s_PB_Instagram_Highlight_44s.mp4" --caption "Finally cracked the 2-minute barrier at High Plains Raceway 🏁 1:59.67 in the 718 GT4! Full lap on YouTube #Porsche #718GT4 #TrackDay"
 ```
 
 3. **Publish Carousel** (Tuesday 4:5 Data Progression Post):
@@ -186,22 +186,22 @@ python community_pulse.py
 
 ---
 
-## 📅 Phase 2 Cadence: In-Depth Technique & Community Engagement (🔥 CURRENT ACTIVE SCHEDULE)
+## 📅 Phase 2 Cadence: In-Depth Technique & Community Engagement (✅ COMPLETED & ARCHIVED)
 
 | Day | Platform | Format | Asset & Focus | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **Daily** | **Rennlist / Reddit** | 1-Click Scan | **Daily Community Pulse (`python community_pulse.py`)**<br>5-minute check: answer inbound thread replies and drop 1 authentic technical comment to funnel targeted drivers to YouTube. | 🟢 **Ongoing** |
+| **Daily** | **Rennlist / Reddit** | 1-Click Scan | **Daily Community Pulse (`python community_pulse.py`)**<br>5-minute check: answer inbound thread replies and drop 1 authentic technical comment to funnel targeted drivers to YouTube. | ✅ **Completed** |
 | **Saturday** | **Instagram Reels** | 9:16 Vertical (2:01) | **Sunday Consistency Follow-up** — [View Reel](https://www.instagram.com/reel/DenBzF_RdZb/)<br>`Social Exports/2026-10-11_Sun_S2_GT4_2m00s_FollowUp_Reel.mp4`<br>*Back-to-back 2:00.12 lap on heat-cycled tires proving pace consistency.* | ✅ **Published Live** |
 | **Sunday** | **YouTube Playlist** | 1080p Sessions (Public) | **Full Session Video Archives** — [View Public Playlist](https://www.youtube.com/playlist?list=PLTWhq01zbTaU)<br>Playlist: *High Plains Raceway — October 2026 Season Finale (718 Cayman GT4)* | ✅ **Published Live** |
 | **Monday** | **Rennlist / Reddit** | Community / Discussion | **Community Q&A & Technical Discussion**<br>Active debrief discussions in Rennlist 718 subforum & `r/CarTrackDays`. | ✅ **Completed** |
 | **Tuesday** | **YouTube Shorts & IG Reels** | 9:16 Vertical (20s) | **Turn 4 Trail-Braking Breakdown** — [Instagram Reel](https://www.instagram.com/reel/Deu541Jxt_U/) \| [YouTube Short](https://youtu.be/5zPH4s_Lmik)<br>`Social Exports/2026-10-10_Sat_S2_GT4_Trail_Braking_Reel_20s.mp4`<br>*-1.25G braking spike down to 15% apex trail curing 718 understeer.* | ✅ **Published Live** |
 | **Wednesday** | **Instagram / Reddit** | Photo Post & Debrief | **Trackside Apex Attack Shot & Setup Discussion** — [View Instagram Post](https://www.instagram.com/p/Dex08iOTgVd/)<br>`Track Photos/05-03-2026-Where-the-Buffalo-Roam-HPDE-Bryon-Lawrenz-688.jpg`<br>*Focus: Front axle stance, dynamic compression, and clearing 265 front rubber without liner rub.* | ✅ **Published Live** |
 | **Thursday** | **YouTube Shorts & IG Reels** | 9:16 Vertical (20s) | **Turn 3 Carousel Exit & 134.8 MPH Velocity** — [Instagram Reel](https://www.instagram.com/reel/De0ZPJxx1Km/) \| [YouTube Short](https://youtu.be/aOUbcqyIXMk)<br>`Social Exports/2026-10-10_Sat_S2_GT4_WOT_Acceleration_Reel_20s.mp4`<br>*Carrying apex speed and pulling 36.6% WOT across the 2,838 ft straight (caption: `charts/thursday_reel_caption.txt`).* | ✅ **Published Live** |
-| **Friday (Today)** | **Instagram** | 4:5 Card Graphic | **End-of-Season Maintenance & Build Log** — [View Instagram Post](https://www.instagram.com/p/De3S3iWzyOZ/)<br>`charts/end_of_season_maintenance_card.png`<br>*Castrol SRF flush, Pagid RSL29 pads, and Brembo ceramic caliper puck inspection (caption: `charts/friday_maintenance_caption.txt`).* | ✅ **Published Live** |
+| **Friday** | **Instagram** | 4:5 Card Graphic | **End-of-Season Maintenance & Build Log** — [View Instagram Post](https://www.instagram.com/p/De3S3iWzyOZ/)<br>`charts/end_of_season_maintenance_card.png`<br>*Castrol SRF flush, Pagid RSL29 pads, and Brembo ceramic caliper puck inspection (caption: `charts/friday_maintenance_caption.txt`).* | ✅ **Published Live** |
 
 ---
 
-## 📅 Phase 3 Cadence: Next Week — Off-Season Engineering & Track Guide (📦 PRE-RENDERED & READY)
+## 📅 Phase 3 Cadence: Off-Season Engineering & Track Guide (✅ COMPLETED & ARCHIVED)
 
 | Day | Platform | Format | Pre-Rendered Asset & Focus | Status |
 | :--- | :--- | :--- | :--- | :--- |
@@ -214,7 +214,7 @@ python community_pulse.py
 
 ---
 
-## 📅 Phase 4 Cadence: Next Week — Chasing the 1:56.55 Benchmark & 2026 Season Wrap (📦 PRE-RENDERED & READY)
+## 📅 Phase 4 Cadence: Chasing the 1:56.55 Benchmark & 2026 Season Wrap (🔥 CURRENT ACTIVE SCHEDULE)
 
 | Day | Platform | Format | Pre-Rendered Asset & Focus | Status |
 | :--- | :--- | :--- | :--- | :--- |
