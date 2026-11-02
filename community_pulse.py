@@ -322,7 +322,9 @@ def scout_reddit_threads(session_client, limit=20):
                     sub_name = cat_elem.attrib.get('term', 'CarTrackDays') if cat_elem is not None else "CarTrackDays"
                     content_elem = entry.find('atom:content', ns)
                     raw_html = content_elem.text if content_elem is not None else ""
-                    selftext = re.sub(r'<[^>]+>', ' ', raw_html)
+                    import html as html_mod
+                    selftext = re.sub(r'<[^>]+>', ' ', html_mod.unescape(raw_html))
+                    selftext = ' '.join(selftext.split())
 
                     matches = score_and_match(title, selftext)
                     if matches:
@@ -337,6 +339,7 @@ def scout_reddit_threads(session_client, limit=20):
                             "age_hours": round(age_hours, 1),
                             "category": best_match["profile"]["category"],
                             "keywords": best_match["matched_keywords"],
+                            "snippet": selftext[:350],
                             "draft": best_match["profile"]["draft_template"]
                         })
             else:
@@ -406,8 +409,10 @@ def write_pulse_report(rl_status, rd_status, opps):
                 f.write(f"### {i}. [{opp['title']}]({opp['url']})\n")
                 f.write(f"- **Subreddit:** `r/{opp['subreddit']}` | **Author:** `/u/{opp['author']}` | **Age:** {opp['age_hours']}h ago\n")
                 f.write(f"- **Engagement:** {opp['score']} upvotes, {opp['num_comments']} comments\n")
-                f.write(f"- **Matched Topic:** **{opp['category']}** *(Keywords: `{', '.join(opp['keywords'])}`)*\n\n")
-                f.write("**Recommended Technical Reply Draft:**\n")
+                f.write(f"- **Matched Topic:** **{opp['category']}** *(Keywords: `{', '.join(opp['keywords'])}`)*\n")
+                if opp.get('snippet'):
+                    f.write(f"- **Post Excerpt:** *\"{opp['snippet']}...\"*\n")
+                f.write("\n**Recommended Technical Reply Draft:**\n")
                 f.write(f"> {opp['draft']}\n\n")
                 f.write(f"[👉 Click Here to Open Reddit Thread]({opp['url']})\n\n")
                 f.write("---\n\n")
