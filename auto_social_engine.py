@@ -126,9 +126,12 @@ if __name__ == "__main__":
     parser.add_argument("--gear-delta", action="store_true", help="Render 20s Turn 4 3rd vs 4th Gear Selection Reel")
     parser.add_argument("--blind-crest", action="store_true", help="Render 20s Turn 6-7 Bowl Compression to Blind Crest Reel")
     parser.add_argument("--back-scurves", action="store_true", help="Render 20s Turn 8-10 Technical S-Curves Reel")
+    parser.add_argument("--t1-attack", action="store_true", help="Render 20s Start/Finish to Turn 1-2 Threshold Entry Reel")
+    parser.add_argument("--hilltop-descent", action="store_true", help="Render 20s Turn 11-13 Hilltop to Ladder to Heaven Descent Reel")
     parser.add_argument("--all-next-week", action="store_true", help="Render all Phase 2 reels (Trail-Braking and WOT)")
     parser.add_argument("--phase3", action="store_true", help="Render all Phase 3 reels (Oversteer Rotation and 3rd Gear Delta)")
     parser.add_argument("--phase4", action="store_true", help="Render all Phase 4 reels (T6-T7 Blind Crest and T8-T10 S-Curves)")
+    parser.add_argument("--phase5", action="store_true", help="Render all Phase 5 reels (T1-T2 Entry Attack and T11-T13 Hilltop Descent)")
     args = parser.parse_args()
 
     render_peak = args.peak_grip
@@ -139,8 +142,10 @@ if __name__ == "__main__":
     render_gear_delta = args.gear_delta or args.phase3
     render_blind_crest = args.blind_crest or args.phase4
     render_back_scurves = args.back_scurves or args.phase4
+    render_t1_attack = args.t1_attack or args.phase5
+    render_hilltop_descent = args.hilltop_descent or args.phase5
 
-    if not any([args.peak_grip, args.followup, args.trail_braking, args.wot, args.all_next_week, args.oversteer, args.gear_delta, args.phase3, args.blind_crest, args.back_scurves, args.phase4]):
+    if not any([args.peak_grip, args.followup, args.trail_braking, args.wot, args.all_next_week, args.oversteer, args.gear_delta, args.phase3, args.blind_crest, args.back_scurves, args.phase4, args.t1_attack, args.hilltop_descent, args.phase5]):
         render_peak = True
         render_followup = True
 
@@ -240,6 +245,30 @@ if __name__ == "__main__":
             output_name="2026-10-10_Sat_S2_GT4_T8_T10_Technical_Complex_Reel_20s.mp4",
             title_text="TECHNICAL S-CURVE FLOW",
             stat_badge="TURNS 8-10 | 99.2 MPH | 1.35G"
+        )
+
+    # Phase 5 Clip 1: Sector 1 Turn 1-2 High-Speed Entry Commitment
+    if render_t1_attack:
+        print("\nGenerating Phase 5 Tuesday Clip: Turn 1-2 High-Speed Entry Commitment (109 MPH, -1.24G Brake, 1.31G Apex)...")
+        clip_highlight_reel(
+            video_file="2026-10-10 HPR-Full Sat-S2 Lap 8 (GT4) - 1m59.624s [PB Clip].mp4",
+            start_sec=14.0,
+            duration_sec=20.0,
+            output_name="2026-10-10_Sat_S2_GT4_T1_T2_Entry_Commitment_Reel_20s.mp4",
+            title_text="TURN 1 ENTRY COMMITMENT",
+            stat_badge="109 MPH ENTRY | -1.24G BRAKE | 1.31G"
+        )
+
+    # Phase 5 Clip 2: Turns 11-13 Hilltop (5,053 ft) to Ladder to Heaven Descent
+    if render_hilltop_descent:
+        print("\nGenerating Phase 5 Thursday Clip: Turns 11-13 Hilltop to Ladder to Heaven Descent (5053 ft Crest)...")
+        clip_highlight_reel(
+            video_file="2026-10-10 HPR-Full Sat-S2 Lap 8 (GT4) - 1m59.624s [PB Clip].mp4",
+            start_sec=101.0,
+            duration_sec=20.0,
+            output_name="2026-10-10_Sat_S2_GT4_T11_T13_Hilltop_Descent_Reel_20s.mp4",
+            title_text="5053 FT HILLTOP DESCENT",
+            stat_badge="TURNS 11-13 | LADDER TO HEAVEN"
         )
 
     print(f"\nAll generated files available in: {EXPORT_DIR}")

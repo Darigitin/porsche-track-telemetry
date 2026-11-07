@@ -1,0 +1,14 @@
+The 30.5 PSI Hot Window: My Super-200TW tire pressure & thermal playbook for the 718 Cayman GT4 🏁🛞
+
+If there is one zero-dollar adjustment that unlocked the biggest chunk of grip on my car, it was getting obsessive about hot tire pressures across a track day.
+
+Running 265/35R19 front and 295/30R19 rear Vitour Tempesta P1s on 19x9" and 19x11" Apex VS-5RE forged wheels, here is the exact routine that dialed in 1.35G sustained cornering and 1.54G peak grip at High Plains Raceway:
+
+• Cold Start (23.5 - 24.0 PSI): Starting at 23.5 PSI cold feels slightly wiggly for the first 4-5 corners on the out-lap, so I take Lap 1 at 80% pace to put heat into the carcass before leaning hard on the sidewalls.
+• The 7-PSI Thermal Climb: Over a 20-minute session at HPR, pressures climb ~6.5 to 7.0 PSI into the 30.5 PSI Front / 31.0 PSI Rear sweet spot.
+• The >32.5 PSI Greasy Cliff: In my CAN telemetry, the moment hot pressures creep past 32.5 PSI, the center of the tread crowns slightly, mid-corner lateral G drops off, and the rear starts sliding on throttle application.
+• Hot Pit Bleed Routine: Always check and bleed pressures immediately when coming into the paddock after Session 1 before the tires cool down—especially as ambient track temps rise before the afternoon sessions.
+
+What tire compound and hot pressure target are you running on your track car? Drop your setup below! 👇
+
+#Porsche #718GT4 #CaymanGT4 #VitourP1 #ApexWheels #TirePressure #TrackSetup #MotorsportEngineering #HighPlainsRaceway #TarettEngineering #HPDE #TrackDay

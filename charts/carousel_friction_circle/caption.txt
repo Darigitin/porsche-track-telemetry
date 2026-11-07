@@ -1,0 +1,14 @@
+Inside the Friction Circle: What my 10Hz G-G diagram revealed when overlaying my 1:59.67 PB against a 1:56.55 reference lap in the 718 Cayman GT4 🏁📊
+
+When you plot Lateral G (cornering) against Longitudinal G (braking and acceleration), you get a direct visual map of how much of the tire's total grip envelope you're actually using.
+
+Swipe through the 4-slide telemetry deck for the biggest takeaway from my data:
+
+1️⃣ Total Grip Is Already Matched (39.4% vs 38.6% > 1.0G): In pure steady-state cornering and straight-line braking, both laps load the tires almost identically (0.97G vs 0.96G average cornering load, 1.54G peak).
+2️⃣ The "Cross" vs. "Bowl" Shape: My G-G plot looks more like a plus sign—heavy straight-line braking followed by an early release before building cornering G. The reference lap looks like a wide bowl, filling out the bottom-left and bottom-right shoulders of the circle.
+3️⃣ 2x More Time in the Trail-Brake Quadrant (5.1% vs 10.5%): The instructor spends more than double the lap time blending deceleration (<-0.25G) and cornering load (>0.40G) simultaneously.
+4️⃣ Why It Matters on Exit: Keeping that -0.3G to -0.6G of brake load on the nose past turn-in rotates the car before the apex, eliminating the extra 20° of mid-corner steering lock and letting you go straight to 100% throttle on exit.
+
+Have you ever plotted a G-G friction circle from your track sessions? Drop what data setup you use below! 👇
+
+#Porsche #718GT4 #CaymanGT4 #HighPlainsRaceway #FrictionCircle #VehicleDynamics #TrackTelemetry #TrailBraking #TarettEngineering #VitourP1 #HPDE #TrackDay

@@ -227,6 +227,19 @@ python community_pulse.py
 
 ---
 
+## 📅 Phase 5 Cadence: Inside the Friction Circle & Tire Thermal Playbook (🔥 CURRENT ACTIVE SCHEDULE)
+
+| Day | Platform | Format | Pre-Rendered Asset & Focus | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **Weekend (Sat/Sun)** | **Reddit (`r/CarTrackDays`)** | G-G Chart + Post | **What the Friction Circle (G-G Plot) Showed Me About My 1:59.67 PB vs. My Instructor's 1:56.55 Lap**<br>Chart: [`charts/pb_vs_instructor_friction_circle.png`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/charts/pb_vs_instructor_friction_circle.png)<br>Body: [`reports/reddit_thread_friction_circle.md`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/reports/reddit_thread_friction_circle.md)<br>*Compares the "Cross" vs. "Bowl" G-G shape (5.1% vs 10.5% of lap spent in the trail-brake blending quadrant).* | 📦 **Staged & Ready** |
+| **Monday** | **Rennlist / Reddit** | Community / Discussion | **Daily Community Pulse & Technical Q&A (`python community_pulse.py`)**<br>*Follow up on weekend Friction Circle discussion and active track setup threads.* | 📦 **Scheduled** |
+| **Tuesday** | **YouTube Shorts & IG Reels** | 9:16 Vertical (20s) | **Sector 1 Attack: 109 MPH into Turn 1 & Turn 2 (`-1.24G` Brake to `1.31G` Apex)**<br>Video: `Social Exports/2026-10-10_Sat_S2_GT4_T1_T2_Entry_Commitment_Reel_20s.mp4`<br>Captions: [`charts/phase5_tuesday_t1_caption.txt`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/charts/phase5_tuesday_t1_caption.txt) \| [`charts/phase5_tuesday_t1_yt_desc.txt`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/charts/phase5_tuesday_t1_yt_desc.txt)<br>*Shows 4th-gear 109 MPH threshold brake into T1 and uphill transition through T2.* | 📦 **Pre-Rendered** |
+| **Wednesday** | **Instagram Carousel** | 4-Slide 4:5 Livery Deck | **Inside the Friction Circle: 4-Slide G-G Telemetry Deck (`5.1%` vs `10.5%` Trail-Brake Zone)**<br>Folder: [`charts/carousel_friction_circle/`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/charts/carousel_friction_circle)<br>Caption: [`charts/carousel_friction_circle/caption.txt`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/charts/carousel_friction_circle/caption.txt)<br>*Command: `python instagram_uploader.py --carousel-dir charts/carousel_friction_circle --caption-file charts/carousel_friction_circle/caption.txt`* | 📦 **Pre-Rendered** |
+| **Thursday** | **YouTube Shorts & IG Reels** | 9:16 Vertical (20s) | **Turns 11–13: Cresting 5,053 ft Hilltop Down "Ladder to Heaven"**<br>Video: `Social Exports/2026-10-10_Sat_S2_GT4_T11_T13_Hilltop_Descent_Reel_20s.mp4`<br>Captions: [`charts/phase5_thursday_hilltop_caption.txt`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/charts/phase5_thursday_hilltop_caption.txt) \| [`charts/phase5_thursday_hilltop_yt_desc.txt`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/charts/phase5_thursday_hilltop_yt_desc.txt)<br>*Highlights peak elevation crown at T11 and 95+ MPH downhill placement through T12.* | 📦 **Pre-Rendered** |
+| **Friday** | **Instagram** | 4:5 Card Graphic | **The 30.5 PSI Hot Window: Super-200TW Tire Pressure & Thermal Playbook**<br>Graphic: [`charts/tire_pressure_playbook_card.png`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/charts/tire_pressure_playbook_card.png)<br>Caption: [`charts/phase5_friday_tire_playbook_caption.txt`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/charts/phase5_friday_tire_playbook_caption.txt)<br>*Command: `python instagram_uploader.py --photo charts/tire_pressure_playbook_card.png --caption-file charts/phase5_friday_tire_playbook_caption.txt`* | 📦 **Pre-Rendered** |
+
+---
+
 ## 🛠️ Tooling & Scripts Reference
 
 * [`process_weekend_for_social.py`](file:///c:/Users/Darig/Projects/Porsche%20Track%20App/process_weekend_for_social.py) — **Master 1-click orchestrator:** scans telemetry, renders all clips, and generates `upload_manifest.md`.
