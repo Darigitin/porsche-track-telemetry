@@ -1,6 +1,6 @@
 # ⚡ Daily Community Pulse & Action Brief
 
-*Generated on 2026-11-02 16:09:02 for Matthew Garrett (`/u/mgarrettgt4`)*
+*Generated on 2026-11-06 21:58:23 for Matthew Garrett (`/u/mgarrettgt4`)*
 
 ---
 
@@ -23,68 +23,68 @@
 
 ## 🎯 3. Today's Top Discussion & Karma Opportunities
 
-### 1. [Anyone have experience using actual rain/wet tires? What is the life expectancy when used in cold/wet? Hoosier w2 or Toyo ra1.](https://www.reddit.com/r/CarTrackDays/comments/1xm8eyd/anyone_have_experience_using_actual_rainwet_tires/)
-- **Subreddit:** `r/CarTrackDays` | **Author:** `/u/jrileyy229` | **Age:** 2.7h ago
+### 1. [Brake pads and rotors?](https://www.reddit.com/r/Porsche_Cayman/comments/1xpbdyn/brake_pads_and_rotors/)
+- **Subreddit:** `r/Porsche_Cayman` | **Author:** `/u/Manimal414` | **Age:** 16.7h ago
 - **Engagement:** 1 upvotes, 0 comments
-- **Matched Topic:** **Tire Pressures & 200TW Compounds** *(Keywords: `tire, tires, 200tw`)*
-- **Post Excerpt:** *"Kswap NB Miata. Have a 8 unused 15x9.5 wheels... Multiple sets of wheels already with 200tw tires 225 and 245. I know a lot of people use Michelin ps4s for this purpose, but they aren't out there in my miata sizing. We endurance race an e46 and use michelins as our rain tires. So I'm looking to put rains on a set and really only seeing Hoosier w2 w..."*
+- **Matched Topic:** **Brakes, Pads & Caliper Pucks** *(Keywords: `brake, pad, pads, rotor, rotors`)*
+- **Post Excerpt:** *"So what are you guys running with aftermarket? submitted by /u/Manimal414 to r/Porsche_Cayman [link] [comments]..."*
 
 **Recommended Technical Reply Draft:**
-> I run a 2023 718 Cayman GT4 on 19" Apex VS-5RE forged wheels with Vitour Tempesta P1s (265/35R19 front, 295/30R19 rear). For 200TW tires like these, I start cold at 23.5–24.0 PSI to hit an exact hot target of 30.5 PSI Front / 31.0 PSI Rear. In my telemetry, crossing over 32.5 PSI hot immediately causes mid-corner greasy slip and costs tenths on corner exit. Dials in sustained 1.35G and 1.54G peak cornering without rolling over onto the sidewalls.
+> On my 718 GT4, I run GiroDisc 380mm floating rotors with Pagid RSL29 endurance pads and Castrol React SRF fluid, coupled with Spiegler stainless lines and Tarett caliper studs. If you track a 718/981 Cayman or 991, keep a close eye on the factory Brembo ceramic caliper pucks—they crack under severe track heat. Instead of spending $2k+ on boutique titanium pistons, Girodisc 1mm titanium pad heat shields (TS-1741) or Demon Speed / AutoQuest replacement pucks drastically lower thermal transfer to the pistons and protect your dust boots and fluid.
 
-[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/CarTrackDays/comments/1xm8eyd/anyone_have_experience_using_actual_rainwet_tires/)
+[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/Porsche_Cayman/comments/1xpbdyn/brake_pads_and_rotors/)
 
 ---
 
-### 2. [Fastest lap at TT Assen last weekend, BMW E46 330i](https://www.reddit.com/r/CarTrackDays/comments/1xm9opo/fastest_lap_at_tt_assen_last_weekend_bmw_e46_330i/)
-- **Subreddit:** `r/CarTrackDays` | **Author:** `/u/AmbroseRL` | **Age:** 1.9h ago
+### 2. [GT3 Recommended Spec](https://www.reddit.com/r/Porsche/comments/1xpr9pw/gt3_recommended_spec/)
+- **Subreddit:** `r/Porsche` | **Author:** `/u/Hockeyhoser` | **Age:** 5.7h ago
 - **Engagement:** 1 upvotes, 0 comments
-- **Matched Topic:** **Suspension, Alignment & Understeer** *(Keywords: `camber, understeer`)*
-- **Post Excerpt:** *"2:06.15, some time left to gain still. Also my front left tire decided to delaminate (only 5h of track use on them) the next day. Reckon the combination of Assen's right hand understeering tendencies combined with too little camber (stock -1.2deg) wasn't great on the AR-1. Live and Learn. As always advice, tips & tricks are welcome! submitted by /u..."*
+- **Matched Topic:** **Brakes, Pads & Caliper Pucks** *(Keywords: `brake, brakes`)*
+- **Post Excerpt:** *"Hi all, I was fortunate(?) to get an allocation for a GT3 Touring (today). I am wondering what the consensus is on best value options to take. I tend to gravitate to functional options, but aesthetics are somewhat important to an extent. I don’t think I need a one-off paint, but something non-gray would be nice. Givens are: front axle lift, extende..."*
 
 **Recommended Technical Reply Draft:**
-> The factory 718 Cayman GT4 understeer can be completely resolved with proper front geometry. I did a full monoball conversion with Tarett front camber plates, GT3 lower control arm shims, and caster-adjustable thrust arm bushings (essential to keep the 265 front tire from rubbing the fender liner under lock). On the rear, Tarett toe control arms with bump steer locking plates cured the nervous dynamic rear toe-out under threshold braking. The car now rotates predictably on trail-brake.
+> On my 718 GT4, I run GiroDisc 380mm floating rotors with Pagid RSL29 endurance pads and Castrol React SRF fluid, coupled with Spiegler stainless lines and Tarett caliper studs. If you track a 718/981 Cayman or 991, keep a close eye on the factory Brembo ceramic caliper pucks—they crack under severe track heat. Instead of spending $2k+ on boutique titanium pistons, Girodisc 1mm titanium pad heat shields (TS-1741) or Demon Speed / AutoQuest replacement pucks drastically lower thermal transfer to the pistons and protect your dust boots and fluid.
 
-[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/CarTrackDays/comments/1xm9opo/fastest_lap_at_tt_assen_last_weekend_bmw_e46_330i/)
+[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/Porsche/comments/1xpr9pw/gt3_recommended_spec/)
 
 ---
 
-### 3. [Last of the Northeast foliage](https://www.reddit.com/r/Porsche_Cayman/comments/1xm8n1e/last_of_the_northeast_foliage/)
-- **Subreddit:** `r/Porsche_Cayman` | **Author:** `/u/Worldly_Expression43` | **Age:** 2.6h ago
+### 3. [Squeaky brake sounds](https://www.reddit.com/r/Porsche_Cayman/comments/1xotn2z/squeaky_brake_sounds/)
+- **Subreddit:** `r/Porsche_Cayman` | **Author:** `/u/Huge-Leading-6124` | **Age:** 32.3h ago
 - **Engagement:** 1 upvotes, 0 comments
-- **Matched Topic:** **Tire Pressures & 200TW Compounds** *(Keywords: `tire, tires`)*
-- **Post Excerpt:** *"Time to put on the all weather tires! submitted by /u/Worldly_Expression43 to r/Porsche_Cayman [link] [comments]..."*
+- **Matched Topic:** **Brakes, Pads & Caliper Pucks** *(Keywords: `brake, brakes`)*
+- **Post Excerpt:** *"I just bought my cayman 718 and the brake sounds are killing me , they’re very squeaky and lowkey embarrassing. Apparently they’re normal and that’s how porsche brakes sound because they’re “high performance” is that true ? i can’t imagine dealing with these squeaky sounds submitted by /u/Huge-Leading-6124 to r/Porsche_Cayman [link] [comments]..."*
 
 **Recommended Technical Reply Draft:**
-> I run a 2023 718 Cayman GT4 on 19" Apex VS-5RE forged wheels with Vitour Tempesta P1s (265/35R19 front, 295/30R19 rear). For 200TW tires like these, I start cold at 23.5–24.0 PSI to hit an exact hot target of 30.5 PSI Front / 31.0 PSI Rear. In my telemetry, crossing over 32.5 PSI hot immediately causes mid-corner greasy slip and costs tenths on corner exit. Dials in sustained 1.35G and 1.54G peak cornering without rolling over onto the sidewalls.
+> On my 718 GT4, I run GiroDisc 380mm floating rotors with Pagid RSL29 endurance pads and Castrol React SRF fluid, coupled with Spiegler stainless lines and Tarett caliper studs. If you track a 718/981 Cayman or 991, keep a close eye on the factory Brembo ceramic caliper pucks—they crack under severe track heat. Instead of spending $2k+ on boutique titanium pistons, Girodisc 1mm titanium pad heat shields (TS-1741) or Demon Speed / AutoQuest replacement pucks drastically lower thermal transfer to the pistons and protect your dust boots and fluid.
 
-[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/Porsche_Cayman/comments/1xm8n1e/last_of_the_northeast_foliage/)
+[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/Porsche_Cayman/comments/1xotn2z/squeaky_brake_sounds/)
 
 ---
 
-### 4. [981 S still has whining noise after 9 months even with belt removed (video)](https://www.reddit.com/r/Porsche/comments/1xm8t7p/981_s_still_has_whining_noise_after_9_months_even/)
-- **Subreddit:** `r/Porsche` | **Author:** `/u/skimdit` | **Age:** 2.5h ago
+### 4. [Should I switch my PEC experience](https://www.reddit.com/r/Porsche/comments/1xp3975/should_i_switch_my_pec_experience/)
+- **Subreddit:** `r/Porsche` | **Author:** `/u/Important_Bug3266` | **Age:** 25.0h ago
 - **Engagement:** 1 upvotes, 0 comments
-- **Matched Topic:** **Tire Pressures & 200TW Compounds** *(Keywords: `pressure`)*
-- **Post Excerpt:** *"Back in January, I posted about an RPM-dependent whining noise from my 30k-mile 2013 Boxster S that appeared the day after my first spirited drive with the car, about a month after I bought it. Since then, the car has been examined by multiple reputable Porsche specialists, including a Porsche dealership, without any mechanical problems being ident..."*
+- **Matched Topic:** **Brakes, Pads & Caliper Pucks** *(Keywords: `brake`)*
+- **Post Excerpt:** *"Just got the GT3 vs Turbo S experience at Porsche experience in ATL but am thinking of switching for $380 more to the GT3RS vs GT4RS experience. Is it worth the extra cash, or just stick with what I chose? I initially was keen on experiencing the turbo s acceleration but after watching some videos noticed the “launch control” section of the track i..."*
 
 **Recommended Technical Reply Draft:**
-> I run a 2023 718 Cayman GT4 on 19" Apex VS-5RE forged wheels with Vitour Tempesta P1s (265/35R19 front, 295/30R19 rear). For 200TW tires like these, I start cold at 23.5–24.0 PSI to hit an exact hot target of 30.5 PSI Front / 31.0 PSI Rear. In my telemetry, crossing over 32.5 PSI hot immediately causes mid-corner greasy slip and costs tenths on corner exit. Dials in sustained 1.35G and 1.54G peak cornering without rolling over onto the sidewalls.
+> On my 718 GT4, I run GiroDisc 380mm floating rotors with Pagid RSL29 endurance pads and Castrol React SRF fluid, coupled with Spiegler stainless lines and Tarett caliper studs. If you track a 718/981 Cayman or 991, keep a close eye on the factory Brembo ceramic caliper pucks—they crack under severe track heat. Instead of spending $2k+ on boutique titanium pistons, Girodisc 1mm titanium pad heat shields (TS-1741) or Demon Speed / AutoQuest replacement pucks drastically lower thermal transfer to the pistons and protect your dust boots and fluid.
 
-[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/Porsche/comments/1xm8t7p/981_s_still_has_whining_noise_after_9_months_even/)
+[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/Porsche/comments/1xp3975/should_i_switch_my_pec_experience/)
 
 ---
 
-### 5. [Autobahn Country Club Members — Local Motorsport Photographer](https://www.reddit.com/r/CarTrackDays/comments/1xlwesr/autobahn_country_club_members_local_motorsport/)
-- **Subreddit:** `r/CarTrackDays` | **Author:** `/u/HwGJonnayy` | **Age:** 10.2h ago
+### 5. [Unapologetic hot take: The current Macan GTS is quietly one of the best cars Porsche has ever built.](https://www.reddit.com/r/Porsche/comments/1xp2k8q/unapologetic_hot_take_the_current_macan_gts_is/)
+- **Subreddit:** `r/Porsche` | **Author:** `/u/_GTS_Panda` | **Age:** 25.6h ago
 - **Engagement:** 1 upvotes, 0 comments
 - **Matched Topic:** **Tire Pressures & 200TW Compounds** *(Keywords: `tire`)*
-- **Post Excerpt:** *"Hey everyone! Not entirely sure if this type of post is allowed here, so apologies in advance if it isn't! I'm a local automotive and motorsport photographer from the Chicago suburbs, and I'm hoping to connect with some fellow car enthusiasts who regularly drive at Autobahn Country Club in Joliet. I noticed the club has additional track days schedu..."*
+- **Post Excerpt:** *"This is a complete hot take and I know I am probably going to catch some hate for it. This sub is always flooded with top tier GT cars and high spec 911s, but honestly, let us give a massive shout out to what might be one of the best Porsches ever built: the current Macan GTS. If you really think about it, there is no vehicle in the entire Porsche ..."*
 
 **Recommended Technical Reply Draft:**
 > I run a 2023 718 Cayman GT4 on 19" Apex VS-5RE forged wheels with Vitour Tempesta P1s (265/35R19 front, 295/30R19 rear). For 200TW tires like these, I start cold at 23.5–24.0 PSI to hit an exact hot target of 30.5 PSI Front / 31.0 PSI Rear. In my telemetry, crossing over 32.5 PSI hot immediately causes mid-corner greasy slip and costs tenths on corner exit. Dials in sustained 1.35G and 1.54G peak cornering without rolling over onto the sidewalls.
 
-[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/CarTrackDays/comments/1xlwesr/autobahn_country_club_members_local_motorsport/)
+[👉 Click Here to Open Reddit Thread](https://www.reddit.com/r/Porsche/comments/1xp2k8q/unapologetic_hot_take_the_current_macan_gts_is/)
 
 ---
 
